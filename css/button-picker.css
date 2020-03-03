@@ -131,7 +131,7 @@ table span {
 	box-shadow:inset 0px 0px 0px 2px #ffffff;
 }
 
-.color-container {
+/* .color-container {
 	
 	float: left;
     height: 50px;
@@ -139,18 +139,22 @@ table span {
     width: 399px;
     z-index: 3;
    
-}
+} */
 
 .current-palette {
 	background-color:#efefef;
 	
-	float: right;
-    margin: 0 0 0 190px;
-    padding: 0 0 4px 5px;
-    position: absolute;
-    top: 5px;
+	/* float: right;
+    margin: 0 0 0 190px; */
+	padding: 2px 5px;
+	border-radius: 5px;
+    background-color: #efefef;
+    padding: 2px 5px;
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 5px;
     width: 145px;
-    z-index: 4;
+    z-index: 4; */
 }
 
 .current-palette  span {
@@ -168,7 +172,7 @@ table span {
 }
 
 .default-palettes {
-	float:left;
+	/* float:left; */
 	font-size:12px;
 	margin:3px 0 0 2px;
 }
@@ -256,7 +260,7 @@ span.dropdown:hover {
 }
 
 /* Ribbon - Textarea */
-.ribbon-left {
+/* .ribbon-left {
 	border-color:transparent #c5c5c5 transparent transparent;
 	border-style:solid;
 	border-width:15px;
@@ -264,9 +268,9 @@ span.dropdown:hover {
 	margin-left:-65px;
 	position:absolute;
 	width:0;
-}
+} */
 
-.ribbon-right {
+/* .ribbon-right {
 	border-color:transparent transparent transparent #c5c5c5;
 	border-style:solid;
 	border-width:15px;
@@ -274,25 +278,25 @@ span.dropdown:hover {
 	margin-left:485px;
 	position:absolute;
 	width:0;
-}
+} */
 
-.ribbon {
+/* .ribbon {
 	height: 270px;
     margin: 15px 0 0 -50px;
     padding: 8px 30px;
     position: absolute;
     width: 490px;
     z-index: 1;
-}
+} */
 
 
-.ribbon input
+/* .ribbon input
 {
 	margin-left:4px !important;
 	width:460px !important;
 	padding:5px 10px !important;
 	position:absolute;
-}
+} */
 
 .hightlightTxt{
 -webkit-touch-callout: none;
@@ -335,20 +339,22 @@ input.input {
 }
 
 select {
-	-moz-border-radius:5px;
+	/* -moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border-radius:5px;
+	border-radius:5px; */
 	background-color:#fcfcfc;
 	border-color:#bbbbbb #dddddd #eeeeee;
 	border-style:solid;
 	border-width:1px;
 	color:#444;
 	font-family:arial;
-	font-size:11px;
+	font-size:13px;
 	letter-spacing:1px;
-	margin:0 0 14px 0;
+	/* margin:0 0 14px 0; */
 	padding:2px;
-	width:163px;
+	/* width:163px; */
+	width: 100%;
+	min-height: 13px;
 }
 
 textarea.form-control:focus, input.form-control:focus, select:focus  {
@@ -359,7 +365,7 @@ textarea.form-control:focus, input.form-control:focus, select:focus  {
 
 /* Settings  - Right Column */
 .settings {
-	-moz-border-radius:8px 8px 8px 8px;
+	/* -moz-border-radius:8px 8px 8px 8px;
 	-webkit-border-radius:8px 8px 8px 8px;
 	border-radius:8px 8px 8px 8px;
 	background-color:#FFFFFF;
@@ -367,14 +373,14 @@ textarea.form-control:focus, input.form-control:focus, select:focus  {
 	float:right;
 	height: 840px;
 	padding: 25px 10px 12px;
-	width: 385px;
+	width: 385px; */
 }
 
-.setting-container {
+/* .setting-container {
 	float:left;
 	padding-left:13px;
 	width:175px;
-}
+} */
 
 .settings label {
 	font-size:11px;
@@ -383,7 +389,7 @@ textarea.form-control:focus, input.form-control:focus, select:focus  {
 .setting-slider, .setting-shadow, .setting-shadow-blur {
 	left: 25px;
     margin: 13px 0 18px;
-    width: 140px;
+    width: calc(100% - 25px);
 }
 
 .setting-input{
@@ -398,7 +404,7 @@ textarea.form-control:focus, input.form-control:focus, select:focus  {
 	*margin:0; /*ie7 hack*/
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
 	height:13px;
 	margin:0 2px 0 0;
 	padding:0;
@@ -406,7 +412,7 @@ input[type="checkbox"] {
 	top:2px;
 	width:13px;
 	*top:-1px; /*ie7 hack*/
-}
+} */
 
 .mini-button {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
@@ -441,7 +447,7 @@ input[type="checkbox"] {
 	padding:0;
 }
 
-.setting-title {
+/* .setting-title {
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
@@ -451,7 +457,7 @@ input[type="checkbox"] {
 	margin:10px 0 20px 15px;
 	padding:5px 10px;
 	width:336px;
-}
+} */
 /* End of Settings*/
 
 .unavailable {
@@ -468,14 +474,14 @@ input[type="checkbox"] {
 }
 
 .refresh-add{
-	height:60px;
+	/* height:60px; */
 	
 }
 .refresh-add .refresh{
     cursor: pointer;
     float: left;
     height: 20px;
-    margin-top: 29px;
+    margin-top: 33px;
     position: relative;
     width: 20px;
     background-image:url('../images/refresh.png');

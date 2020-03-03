@@ -7,6 +7,9 @@ body {
   margin: 0;
   background-image: url("../images/bg.png");
 }
+body .form-control {
+  font-size: 13px;
+}
 
 .h2 {
   margin-bottom: 20px;
@@ -33,11 +36,70 @@ body {
 .main-section .step-two-three h5 {
   font-weight: bold;
 }
-.main-section .step-two-three .form-control {
-  font-size: 13px;
-}
 .main-section .step-two-three textarea {
   height: 220px;
+}
+
+.settings {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+}
+.settings .form-group {
+  margin-bottom: 0.75rem;
+}
+.settings .setup-one .form-control {
+  height: 100%;
+  padding: 3px 8px;
+}
+.settings .setup-one label {
+  margin-bottom: 0.25rem;
+}
+.settings .setup-one h5 {
+  font-weight: bold;
+}
+.settings .setup-one .setting-title {
+  border-radius: 6px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 10px 0 15px;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.settings .setup-one .form-check {
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  color: #777777;
+  padding: 0 5px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+}
+.settings .setup-one .form-check .form-check-input {
+  position: relative;
+  margin: 0 2px 0 0;
+  cursor: pointer;
+}
+.settings .setup-one .form-check label {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px 0 0;
+}
+.settings .setup-one .color-container .form-check {
+  padding: 3px 5px;
+  margin-right: 5px;
+  background: #ffffff;
+}
+.settings .setup-one .color-container .form-check label {
+  font-size: 11px;
+}
+.settings .setup-one .settings-text {
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

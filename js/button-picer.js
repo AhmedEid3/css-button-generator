@@ -759,7 +759,9 @@
       });
 
       $("select").change(function() {
-        styles.fontFamily = $("option:selected").val();
+        styles.fontFamily = $(this)
+          .children("option:selected")
+          .val();
         cssbuttongenerator.setStyles();
       });
 
