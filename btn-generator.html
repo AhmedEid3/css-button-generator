@@ -20,7 +20,7 @@
         Welcome to the css3 button generator, have fun!
       </h1>
       <div class="row">
-        <div class="col-7">
+        <div class="col-md-6 col-lg-7 order-1 order-md-0">
           <div class="main-section shadow">
             <!-- Start preview area -->
             <div class="preview-area">
@@ -84,7 +84,7 @@
             </div>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-md-6 col-lg-5 mb-3">
           <!-- Start settings -->
           <div class="settings shadow">
             <!-- Start setup-one -->
@@ -216,36 +216,54 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-5 col-xl-6">
                     <div class="setting-container refresh-add">
-                      <div class="refresh" id="refresh-fontSize"></div>
-                      <label for="fontSize">Font Size:</label>
-                      <input
-                        type="text"
-                        id="fontSize"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div id="setting-fontSize" class="setting-slider"></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div class="refresh" id="refresh-fontSize"></div>
+                        </div>
+                        <div class="col">
+                          <label for="fontSize">Font Size:</label>
+                          <input
+                            type="text"
+                            id="fontSize"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="setting-fontSize"
+                            class="setting-slider"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-6">
+                  <div class="col-lg-7 col-xl-6">
                     <div class="setting-container refresh-add">
-                      <div class="refresh" id="refresh-horizontalText"></div>
-                      <label for="horizontalText"
-                        >Horizontal Text Alignement:</label
-                      >
-                      <input
-                        type="text"
-                        id="horizontalText"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="setting-horizontalText"
-                        class="setting-slider"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-horizontalText"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="horizontalText"
+                            >Horizontal Text Alignement:</label
+                          >
+                          <input
+                            type="text"
+                            id="horizontalText"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="setting-horizontalText"
+                            class="setting-slider"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12">
@@ -266,7 +284,7 @@
                               <label for="transparent">transparent</label>
                             </div>
                           </div>
-                          <div class="col-auto">
+                          <div class="col-auto order-lg-3 order-xl-0">
                             <div class="form-check">
                               <input
                                 type="checkbox"
@@ -277,7 +295,7 @@
                               <label for="solid">No Gradient</label>
                             </div>
                           </div>
-                          <div class="col">
+                          <div class="col-auto">
                             <div class="current-palette"></div>
                           </div>
                         </div>
@@ -300,30 +318,45 @@
                   Size
                 </div>
                 <div class="row align-items-center">
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container refresh-add">
-                      <div class="refresh" id="refresh-heightY"></div>
-                      <label for="heightY">Vertical Size:</label>
-                      <input
-                        type="text"
-                        id="heightY"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div id="setting-heightY" class="setting-slider"></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div class="refresh" id="refresh-heightY"></div>
+                        </div>
+                        <div class="col">
+                          <label for="heightY">Vertical Size:</label>
+                          <input
+                            type="text"
+                            id="heightY"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="setting-heightY"
+                            class="setting-slider"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container refresh-add">
-                      <div class="refresh" id="refresh-widthX"></div>
-                      <label for="widthX">Horizontal Size:</label>
-                      <input
-                        type="text"
-                        id="widthX"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div id="setting-widthX" class="setting-slider"></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-autp">
+                          <div class="refresh" id="refresh-widthX"></div>
+                        </div>
+                        <div class="col">
+                          <label for="widthX">Horizontal Size:</label>
+                          <input
+                            type="text"
+                            id="widthX"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div id="setting-widthX" class="setting-slider"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -339,7 +372,7 @@
                   <div class="col-12 mb-2">
                     <label>Border Radius:</label>
                     <div class="row no-gutters">
-                      <div class="col-5">
+                      <div class="col-md-6 col-lg-5">
                         <div class="form-check">
                           <input
                             class="form-check-input checkbox bordercorner"
@@ -352,7 +385,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col-5">
+                      <div class="col-md-6 col-lg-5">
                         <div class="form-check">
                           <input
                             class="form-check-input checkbox bordercorner"
@@ -364,7 +397,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col-5">
+                      <div class="col-md-6 col-lg-5">
                         <div class="form-check">
                           <input
                             class="form-check-input checkbox bordercorner"
@@ -379,7 +412,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col-5">
+                      <div class="col-md-6 col-lg-5">
                         <div class="form-check">
                           <input
                             class="form-check-input checkbox bordercorner"
@@ -397,33 +430,48 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container refresh-add border-radius">
-                      <div class="refresh" id="refresh-borderRadius"></div>
-                      <label for="borderRadius">Border Radius:</label>
-                      <input
-                        type="text"
-                        id="borderRadius"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="setting-borderRadius"
-                        class="setting-slider"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div class="refresh" id="refresh-borderRadius"></div>
+                        </div>
+                        <div class="col">
+                          <label for="borderRadius">Border Radius:</label>
+                          <input
+                            type="text"
+                            id="borderRadius"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="setting-borderRadius"
+                            class="setting-slider"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container refresh-add">
-                      <div class="refresh" id="refresh-borderSize"></div>
-                      <label for="borderSize">Border Size:</label>
-                      <input
-                        type="text"
-                        id="borderSize"
-                        class="setting-input"
-                        readonly="readonly"
-                      />
-                      <div id="setting-borderSize" class="setting-slider"></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div class="refresh" id="refresh-borderSize"></div>
+                        </div>
+                        <div class="col">
+                          <label for="borderSize">Border Size:</label>
+                          <input
+                            type="text"
+                            id="borderSize"
+                            class="setting-input"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="setting-borderSize"
+                            class="setting-slider"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -455,74 +503,110 @@
                   </span>
                 </div>
                 <div class="row align-items-center">
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
-                      <div class="refresh" id="refresh-boxShadowOffsetY"></div>
-                      <label for="boxShadowOffsetY">Vertical Position:</label>
-                      <input
-                        type="text"
-                        id="boxShadowOffsetY"
-                        class="setting-input multiple"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-boxShadowOffsetY"
-                        class="setting-shadow"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-boxShadowOffsetY"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="boxShadowOffsetY"
+                            >Vertical Position:</label
+                          >
+                          <input
+                            type="text"
+                            id="boxShadowOffsetY"
+                            class="setting-input multiple"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-boxShadowOffsetY"
+                            class="setting-shadow"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
-                      <div class="refresh" id="refresh-boxShadowOffsetX"></div>
-                      <label for="boxShadowOffsetX">Horizontal Position:</label>
-                      <input
-                        type="text"
-                        id="boxShadowOffsetX"
-                        class="setting-input multiple"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-boxShadowOffsetX"
-                        class="setting-shadow"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-boxShadowOffsetX"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="boxShadowOffsetX"
+                            >Horizontal Position:</label
+                          >
+                          <input
+                            type="text"
+                            id="boxShadowOffsetX"
+                            class="setting-input multiple"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-boxShadowOffsetX"
+                            class="setting-shadow"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
-                      <div
-                        class="refresh"
-                        id="refresh-boxShadowBlurRadius"
-                      ></div>
-                      <label for="boxShadowBlurRadius">Blur Radius:</label>
-                      <input
-                        type="text"
-                        id="boxShadowBlurRadius"
-                        class="setting-input multiple-blur"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-boxShadowBlurRadius"
-                        class="setting-shadow-blur"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-boxShadowBlurRadius"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="boxShadowBlurRadius">Blur Radius:</label>
+                          <input
+                            type="text"
+                            id="boxShadowBlurRadius"
+                            class="setting-input multiple-blur"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-boxShadowBlurRadius"
+                            class="setting-shadow-blur"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
-                      <div
-                        class="refresh"
-                        id="refresh-boxShadowSpreadRadius"
-                      ></div>
-                      <label for="boxShadowSpreadRadius">Spread Radius:</label>
-                      <input
-                        type="text"
-                        id="boxShadowSpreadRadius"
-                        class="setting-input multiple"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-boxShadowSpreadRadius"
-                        class="setting-shadow"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-boxShadowSpreadRadius"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="boxShadowSpreadRadius"
+                            >Spread Radius:</label
+                          >
+                          <input
+                            type="text"
+                            id="boxShadowSpreadRadius"
+                            class="setting-input multiple"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-boxShadowSpreadRadius"
+                            class="setting-shadow"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -543,57 +627,83 @@
                   >
                 </div>
                 <div class="row align-items-center">
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
-                      <div class="refresh" id="refresh-textShadowOffsetY"></div>
-                      <label for="textShadowOffsetY">Vertical Position:</label>
-                      <input
-                        type="text"
-                        id="textShadowOffsetY"
-                        class="setting-input multiple"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-textShadowOffsetY"
-                        class="setting-shadow"
-                      ></div>
+                      <div class="row  no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-textShadowOffsetY"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="textShadowOffsetY"
+                            >Vertical Position:</label
+                          >
+                          <input
+                            type="text"
+                            id="textShadowOffsetY"
+                            class="setting-input multiple"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-textShadowOffsetY"
+                            class="setting-shadow"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
-                      <div class="refresh" id="refresh-textShadowOffsetX"></div>
-                      <label for="textShadowOffsetX"
-                        >Horizontal Position:</label
-                      >
-                      <input
-                        type="text"
-                        id="textShadowOffsetX"
-                        class="setting-input multiple"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-textShadowOffsetX"
-                        class="setting-shadow"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-textShadowOffsetX"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="textShadowOffsetX"
+                            >Horizontal Position:</label
+                          >
+                          <input
+                            type="text"
+                            id="textShadowOffsetX"
+                            class="setting-input multiple"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-textShadowOffsetX"
+                            class="setting-shadow"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
-                      <div
-                        class="refresh"
-                        id="refresh-textShadowBlurRadius"
-                      ></div>
-                      <label for="textShadowBlurRadius">Blur Radius:</label>
-                      <input
-                        type="text"
-                        id="textShadowBlurRadius"
-                        class="setting-input multiple-blur"
-                        readonly="readonly"
-                      />
-                      <div
-                        id="option-textShadowBlurRadius"
-                        class="setting-shadow-blur"
-                      ></div>
+                      <div class="row no-gutters align-items-end">
+                        <div class="col-auto">
+                          <div
+                            class="refresh"
+                            id="refresh-textShadowBlurRadius"
+                          ></div>
+                        </div>
+                        <div class="col">
+                          <label for="textShadowBlurRadius">Blur Radius:</label>
+                          <input
+                            type="text"
+                            id="textShadowBlurRadius"
+                            class="setting-input multiple-blur"
+                            readonly="readonly"
+                          />
+                          <div
+                            id="option-textShadowBlurRadius"
+                            class="setting-shadow-blur"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
