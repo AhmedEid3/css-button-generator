@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 3 Button Generator</title>
+    <!-- bootstrap style -->
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/colorpicker.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/button-picker.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Start Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      var $j = $.noConflict();
+    </script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      $j(function() {
+        $j('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <script src="js/jquery.1.4.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.2.custom.min.js"></script>
+
+    <script src="js/colorpicker.js"></script>
+    <script src="js/button-picer.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h2 text-center">
+        Welcome to the css3 button generator, have fun!
+      </h1>
+      <div class="row">
+        <div class="col-8">
+          <div class="main-section">
+            <!-- Start preview area -->
+            <div class="preview-area">
+              <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-auto">
+                  <button class="btn btn-primary">Text</button>
+                </div>
+              </div>
+            </div>
+            <!-- End preview area -->
+
+            <!-- start background color picker -->
+            <div class="preview-bg">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <div
+                    class="preview-swatch-color selected "
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Preview Background Color"
+                  ></div>
+                </div>
+                <div class="col-auto p-0">
+                  Preview Background Color
+                </div>
+              </div>
+            </div>
+            <!-- End background color picker -->
+
+            <!-- start step two section -->
+            <div class="step-two-three">
+              <h5>
+                STEP 2 :
+                <small class="text-dark"
+                  >Copy this code into your Html page.</small
+                >
+              </h5>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="buttonCode"
+                  value='<a href="#" class="classname">TEXT</a>'
+                />
+              </div>
+            </div>
+            <!-- End step two section -->
+
+            <!-- start step three section -->
+            <div class="step-two-three mt-0">
+              <h5>
+                STEP 3 :
+                <small class="text-dark">Copy this code into your CSS.</small>
+              </h5>
+              <div class="form-group">
+                <textarea class="form-control" name="css-code"></textarea>
+              </div>
+            </div>
+            <!-- End step three section -->
+          </div>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </body>
+</html>
