@@ -557,46 +557,81 @@
         heightY = "height:" + styles.heightY + ";\n";
       }
 
+      // if (styles.borderRadius) {
+      //   if ($("#radiusTopLeft").is(":checked")) {
+      //     borderRadius1 = "";
+      //     borderRadius1 +=
+      //       "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
+      //     borderRadius1 +=
+      //       "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
+      //     borderRadius1 +=
+      //       "	border-top-left-radius:" + styles.borderRadius + ";\n";
+      //   }
+      //   if ($("#radiusTopRight").is(":checked")) {
+      //     borderRadius2 = "";
+      //     borderRadius2 +=
+      //       "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
+      //     borderRadius2 +=
+      //       "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
+      //     borderRadius2 +=
+      //       "	border-top-right-radius:" + styles.borderRadius + ";\n";
+      //   }
+      //   if ($("#radiusBottomRight").is(":checked")) {
+      //     borderRadius3 = "";
+      //     borderRadius3 +=
+      //       "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
+      //     borderRadius3 +=
+      //       "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
+      //     borderRadius3 +=
+      //       "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
+      //   }
+      //   if ($("#radiusBottomLeft").is(":checked")) {
+      //     borderRadius4 = "";
+      //     borderRadius4 +=
+      //       "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
+      //     borderRadius4 +=
+      //       "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
+      //     borderRadius4 +=
+      //       "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
+      //   }
+      //   borderRadius = "";
+      //   borderRadius =
+      //     borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
+      // }
       if (styles.borderRadius) {
-        if ($("#radiusTopLeft").is(":checked")) {
+
           borderRadius1 = "";
           borderRadius1 +=
-            "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
+              "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
           borderRadius1 +=
-            "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
+              "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
           borderRadius1 +=
-            "	border-top-left-radius:" + styles.borderRadius + ";\n";
-        }
-        if ($("#radiusTopRight").is(":checked")) {
+              "	border-top-left-radius:" + styles.borderRadius + ";\n";
+
           borderRadius2 = "";
           borderRadius2 +=
-            "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
+              "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
           borderRadius2 +=
-            "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
+              "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
           borderRadius2 +=
-            "	border-top-right-radius:" + styles.borderRadius + ";\n";
-        }
-        if ($("#radiusBottomRight").is(":checked")) {
+              "	border-top-right-radius:" + styles.borderRadius + ";\n";
           borderRadius3 = "";
           borderRadius3 +=
-            "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
+              "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
           borderRadius3 +=
-            "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
+              "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
           borderRadius3 +=
-            "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
-        }
-        if ($("#radiusBottomLeft").is(":checked")) {
+              "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
           borderRadius4 = "";
           borderRadius4 +=
-            "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
+              "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
           borderRadius4 +=
-            "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
+              "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
           borderRadius4 +=
-            "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
-        }
+              "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
         borderRadius = "";
         borderRadius =
-          borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
+            borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
       }
 
       if ($.browser.msie) {

@@ -19,11 +19,11 @@
 <body>
   <div class="container">
     <!-- <h1 class="h2 text-center">
-        Welcome to the css3 button generator, have fun!
-      </h1> -->
+    Welcome to the css3 button generator, have fun!
+  </h1> -->
     <div class="row no-gutters">
-      <div class="col-md-1"></div>
-      <div class="col-md-6 order-1 order-md-0">
+      <div class="col-lg-1"></div>
+      <div class="col-md-7 col-lg-6 order-1 order-md-0">
         <div class="main-section">
           <h3 class="title">Button Generator</h3>
           <div class="preview">
@@ -35,38 +35,42 @@
                 </div>
                 <div class="col-12 align-self-end">
                   <div class="row">
-                    <div class="col-12"><div class="color-container">
-                      <div class="default-palettes">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-auto">
-                            <div class="preview-swatch-color-bg ml-2">
-                            <div class="preview-swatch-color selected " data-toggle="tooltip" data-placement="top"
-                                 title="Preview Background Color"></div></div>
-                          </div>
-                          <div class="col-auto">
-                            <div class="current-palette mr-2"></div>
-                          </div>
-                          <div class="col-auto">
-                            <div class="form-check">
-                              <input type="checkbox" id="transparent" value="transparent" class="form-check-input" />
-                              <label for="transparent">transparent</label>
+                    <div class="col-12">
+                      <div class="color-container">
+                        <div class="default-palettes">
+                          <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                              <div class="preview-swatch-color-bg ml-2">
+                                <div class="preview-swatch-color selected " data-toggle="tooltip" data-placement="top"
+                                  title="Preview Background Color"></div>
+                              </div>
+                            </div>
+                            <div class="col-auto">
+                              <div class="current-palette mr-2"></div>
+                            </div>
+                            <div class="w-100 d-xl-none"></div>
+                            <div class="col-auto mt-2 mt-xl-0 ml-2">
+                              <div class="form-check">
+                                <input type="checkbox" id="transparent" value="transparent" class="form-check-input" />
+                                <label for="transparent">transparent</label>
+                              </div>
+                            </div>
+                            <div class="col-auto mt-2 mt-xl-0">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="solid" value="solid" />
+                                <label for="solid">No Gradient</label>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-auto order-lg-3 order-xl-0">
-                            <div class="form-check">
-                              <input type="checkbox" class="form-check-input" id="solid" value="solid" />
-                              <label for="solid">No Gradient</label>
-                            </div>
-                          </div>
-                        </div>
 
-                        <!-- <div class="clear">&nbsp;</div> -->
-                        <ul></ul>
-                        <!-- IMPORTANT: Default palettes are loaded in this element -->
+                          <!-- <div class="clear">&nbsp;</div> -->
+                          <ul></ul>
+                          <!-- IMPORTANT: Default palettes are loaded in this element -->
+                        </div>
+                        <div class="color-picker"></div>
+                        <!-- IMPORTANT: ColorPicker is loaded in this element -->
                       </div>
-                      <div class="color-picker"></div>
-                      <!-- IMPORTANT: ColorPicker is loaded in this element -->
-                    </div></div>
+                    </div>
 
                   </div>
                 </div>
@@ -78,20 +82,20 @@
           </div>
           <!-- start background color picker -->
           <!-- <div class="preview-bg">
-              <div class="row align-items-center">
-                <div class="col-auto">
-                  <div
-                    class="preview-swatch-color selected "
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Preview Background Color"
-                  ></div>
-                </div>
-                <div class="col-auto p-0">
-                  Preview Background Color
-                </div>
-              </div>
-            </div> -->
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <div
+                class="preview-swatch-color selected "
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Preview Background Color"
+              ></div>
+            </div>
+            <div class="col-auto p-0">
+              Preview Background Color
+            </div>
+          </div>
+        </div> -->
           <!-- End background color picker -->
 
           <div class="ribbon">
@@ -134,68 +138,21 @@
 
             <!-- Start settings-text -->
             <div class="settings-text">
-              <!-- <div class="alert alert-dark setting-title" role="alert">
-                  Text
-                </div> -->
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <div class="form-group">
-                    <label for="buttonValue">Button Text:</label>
-                    <input type="text" class="form-control" id="buttonValue" value="TEXT" />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="form-group">
-                    <label for="buttonValue">CSS Class Name:</label>
-                    <input type="text" class="form-control" id="classValue" value="classname" />
-                  </div>
-                </div>
+              <div class="alert alert-dark setting-title" role="alert">
+                Text
+              </div>
 
+              <div class="row">
                 <div class="col-6">
                   <div class="form-group">
-                    <label for="colorStyles">Color Styles:</label>
-                    <select id="colorStyles">
-                      <option disabled="disabled" value="" selected="selected">--Select--</option>
-                      <option value="palette0">palette0</option>
-                      <option value="palette1">palette1</option>
-                      <option value="palette2">palette2</option>
-                      <option value="palette3">palette3</option>
-                      <option value="palette4">palette4</option>
-                      <option value="palette5">palette5</option>
-                      <option value="palette6">palette6</option>
-                      <option value="palette7">palette7</option>
-                      <option value="palette8">palette8</option>
-                      <option value="palette9">palette9</option>
-                      <option value="palette10">palette10</option>
-                      <option value="palette11">palette11</option>
-                      <option value="palette12">palette12</option>
-                      <option value="palette13">palette13</option>
-                      <option value="palette14">palette14</option>
-                      <option value="palette15">palette15</option>
-                      <option value="palette16">palette16</option>
-                      <option value="palette17">palette17</option>
-                      <option value="palette18">palette18</option>
-                      <option value="palette19">palette19</option>
-                      <option value="palette20">palette20</option>
-                    </select>
+                    <input type="text" class="form-control" id="buttonValue" value="TEXT"
+                      placeholder="text: my button" />
                   </div>
-                </div>
-                <div class="col-6">
                   <div class="form-group">
-                    <label for="buttonStyle">Button Style:</label>
-                    <select id="buttonStyle">
-                      <option disabled="disabled" value="" selected="selected">--Select--</option>
-                      <option value="1">style-1</option>
-                      <option value="2">style-2</option>
-                      <option value="3">style-3</option>
-                      <option value="4">style-4</option>
-                      <option value="5">style-5</option>
-                    </select>
+                    <input type="text" class="form-control" id="classValue" value="classname"
+                      placeholder="classname: myButton" />
                   </div>
-                </div>
-                <div class="col-6">
                   <div class="form-group">
-                    <label for="fontFamily">Font Family:</label>
                     <select id="fontFamily">
                       <option value="Arial">Arial</option>
                       <option value="Arial Black">Arial Black</option>
@@ -209,7 +166,20 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-6 mb-n3">
+
+                <div class="col-6">
+                  <div class="setting-container refresh-add">
+                    <div class="row no-gutters align-items-end">
+                      <!--                    <div class="col-auto">-->
+                      <!--                      <div class="refresh" id="refresh-fontSize"></div>-->
+                      <!--                    </div>-->
+                      <div class="col">
+                        <label for="fontSize">Font Size:</label>
+                        <input type="text" id="fontSize" class="setting-input" readonly="readonly" />
+                        <div id="setting-fontSize" class="setting-slider"></div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="row no-gutters">
                     <div class="col-auto">
                       <div class="form-check">
@@ -228,309 +198,406 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-5 col-xl-6">
-                  <div class="setting-container refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-fontSize"></div>
-                      </div>
-                      <div class="col">
-                        <label for="fontSize">Font Size:</label>
-                        <input type="text" id="fontSize" class="setting-input" readonly="readonly" />
-                        <div id="setting-fontSize" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
+
                 </div>
 
-                <div class="col-lg-7 col-xl-6">
-                  <div class="setting-container refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-horizontalText"></div>
-                      </div>
-                      <div class="col">
-                        <label for="horizontalText">Horizontal Text Alignement:</label>
-                        <input type="text" id="horizontalText" class="setting-input" readonly="readonly" />
-                        <div id="setting-horizontalText" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!--              <div class="row align-items-center">-->
+                <!--                <div class="col-6">-->
+                <!--                  <div class="form-group">-->
+                <!--                    <label for="buttonValue">Button Text:</label>-->
+                <!--                    <input type="text" class="form-control" id="buttonValue" value="TEXT" />-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-6">-->
+                <!--                  <div class="form-group">-->
+                <!--                    <label for="buttonValue">CSS Class Name:</label>-->
+                <!--                    <input type="text" class="form-control" id="classValue" value="classname" />-->
+                <!--                  </div>-->
+                <!--                </div>-->
 
+                <!--                <div class="col-6">-->
+                <!--                  <div class="form-group">-->
+                <!--                    <label for="colorStyles">Color Styles:</label>-->
+                <!--                    <select id="colorStyles">-->
+                <!--                      <option disabled="disabled" value="" selected="selected">&#45;&#45;Select&#45;&#45;</option>-->
+                <!--                      <option value="palette0">palette0</option>-->
+                <!--                      <option value="palette1">palette1</option>-->
+                <!--                      <option value="palette2">palette2</option>-->
+                <!--                      <option value="palette3">palette3</option>-->
+                <!--                      <option value="palette4">palette4</option>-->
+                <!--                      <option value="palette5">palette5</option>-->
+                <!--                      <option value="palette6">palette6</option>-->
+                <!--                      <option value="palette7">palette7</option>-->
+                <!--                      <option value="palette8">palette8</option>-->
+                <!--                      <option value="palette9">palette9</option>-->
+                <!--                      <option value="palette10">palette10</option>-->
+                <!--                      <option value="palette11">palette11</option>-->
+                <!--                      <option value="palette12">palette12</option>-->
+                <!--                      <option value="palette13">palette13</option>-->
+                <!--                      <option value="palette14">palette14</option>-->
+                <!--                      <option value="palette15">palette15</option>-->
+                <!--                      <option value="palette16">palette16</option>-->
+                <!--                      <option value="palette17">palette17</option>-->
+                <!--                      <option value="palette18">palette18</option>-->
+                <!--                      <option value="palette19">palette19</option>-->
+                <!--                      <option value="palette20">palette20</option>-->
+                <!--                    </select>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-6">-->
+                <!--                  <div class="form-group">-->
+                <!--                    <label for="buttonStyle">Button Style:</label>-->
+                <!--                    <select id="buttonStyle">-->
+                <!--                      <option disabled="disabled" value="" selected="selected">&#45;&#45;Select&#45;&#45;</option>-->
+                <!--                      <option value="1">style-1</option>-->
+                <!--                      <option value="2">style-2</option>-->
+                <!--                      <option value="3">style-3</option>-->
+                <!--                      <option value="4">style-4</option>-->
+                <!--                      <option value="5">style-5</option>-->
+                <!--                    </select>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-6">-->
+                <!--                  <div class="form-group">-->
+                <!--                    <label for="fontFamily">Font Family:</label>-->
+                <!--                    <select id="fontFamily">-->
+                <!--                      <option value="Arial">Arial</option>-->
+                <!--                      <option value="Arial Black">Arial Black</option>-->
+                <!--                      <option value="Comic Sans MS">Comic Sans MS</option>-->
+                <!--                      <option value="Courier New">Courier New</option>-->
+                <!--                      <option value="Georgia">Georgia</option>-->
+                <!--                      <option value="Impact">Impact</option>-->
+                <!--                      <option value="Times New Roman">Times New Roman</option>-->
+                <!--                      <option value="Trebuchet MS">Trebuchet MS</option>-->
+                <!--                      <option value="Verdana">Verdana</option>-->
+                <!--                    </select>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-6 mb-n3">-->
+                <!--                  <div class="row no-gutters">-->
+                <!--                    <div class="col-auto">-->
+                <!--                      <div class="form-check">-->
+                <!--                        <input class="form-check-input" type="checkbox" id="fontWeight" checked />-->
+                <!--                        <label class="form-check-label" for="fontWeight">-->
+                <!--                          Bold-->
+                <!--                        </label>-->
+                <!--                      </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="col-auto">-->
+                <!--                      <div class="form-check">-->
+                <!--                        <input class="form-check-input" type="checkbox" id="fontStyle" />-->
+                <!--                        <label class="form-check-label" for="fontStyle">-->
+                <!--                          <em>Italic</em>-->
+                <!--                        </label>-->
+                <!--                      </div>-->
+                <!--                    </div>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-lg-5 col-xl-6">-->
+                <!--                  <div class="setting-container refresh-add">-->
+                <!--                    <div class="row no-gutters align-items-end">-->
+                <!--                      <div class="col-auto">-->
+                <!--                        <div class="refresh" id="refresh-fontSize"></div>-->
+                <!--                      </div>-->
+                <!--                      <div class="col">-->
+                <!--                        <label for="fontSize">Font Size:</label>-->
+                <!--                        <input type="text" id="fontSize" class="setting-input" readonly="readonly" />-->
+                <!--                        <div id="setting-fontSize" class="setting-slider"></div>-->
+                <!--                      </div>-->
+                <!--                    </div>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+
+                <!--                <div class="col-lg-7 col-xl-6">-->
+                <!--                  <div class="setting-container refresh-add">-->
+                <!--                    <div class="row no-gutters align-items-end">-->
+                <!--                      <div class="col-auto">-->
+                <!--                        <div class="refresh" id="refresh-horizontalText"></div>-->
+                <!--                      </div>-->
+                <!--                      <div class="col">-->
+                <!--                        <label for="horizontalText">Horizontal Text Alignement:</label>-->
+                <!--                        <input type="text" id="horizontalText" class="setting-input" readonly="readonly" />-->
+                <!--                        <div id="setting-horizontalText" class="setting-slider"></div>-->
+                <!--                      </div>-->
+                <!--                    </div>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+
+                <!--              </div>-->
               </div>
+              <!-- End settings-text -->
+
+              <!-- Start Settings size -->
+              <div class="settings-size">
+                <div class="alert alert-dark setting-title" role="alert">
+                  Size
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="setting-container refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-heightY"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="heightY">Vertical Size:</label>
+                          <input type="text" id="heightY" class="setting-input" readonly="readonly" />
+                          <div id="setting-heightY" class="setting-slider"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-autp">-->
+                        <!--                      <div class="refresh" id="refresh-widthX"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="widthX">Horizontal Size:</label>
+                          <input type="text" id="widthX" class="setting-input" readonly="readonly" />
+                          <div id="setting-widthX" class="setting-slider"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Settings size -->
+
+              <!-- Start settings border -->
+              <div class="settings-border">
+                <div class="alert alert-dark setting-title" role="alert">
+                  Border
+                </div>
+                <div class="row align-items-center">
+                  <!--              <div class="col-12 mb-2">-->
+                  <!--                <label>Border Radius:</label>-->
+                  <!--                <div class="row no-gutters">-->
+                  <!--                  <div class="col-md-6 col-lg-5">-->
+                  <!--                    <div class="form-check">-->
+                  <!--                      <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusTopLeft"-->
+                  <!--                             checked=""/>-->
+                  <!--                      <label class="form-check-label" for="radiusTopLeft">-->
+                  <!--                        Top Left-->
+                  <!--                      </label>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
+                  <!--                  <div class="col-md-6 col-lg-5">-->
+                  <!--                    <div class="form-check">-->
+                  <!--                      <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusTopRight"/>-->
+                  <!--                      <label class="form-check-label" for="radiusTopRight">-->
+                  <!--                        Top Right-->
+                  <!--                      </label>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
+                  <!--                  <div class="col-md-6 col-lg-5">-->
+                  <!--                    <div class="form-check">-->
+                  <!--                      <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusBottomLeft"/>-->
+                  <!--                      <label class="form-check-label" for="radiusBottomLeft">-->
+                  <!--                        Bottom Left-->
+                  <!--                      </label>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
+                  <!--                  <div class="col-md-6 col-lg-5">-->
+                  <!--                    <div class="form-check">-->
+                  <!--                      <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusBottomRight"-->
+                  <!--                             checked=""/>-->
+                  <!--                      <label class="form-check-label" for="radiusBottomRight">-->
+                  <!--                        Bottom Right-->
+                  <!--                      </label>-->
+                  <!--                    </div>-->
+                  <!--                  </div>-->
+                  <!--                </div>-->
+                  <!--              </div>-->
+
+                  <div class="col-lg-6">
+                    <div class="setting-container refresh-add border-radius">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-borderRadius"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="borderRadius">Border Radius:</label>
+                          <input type="text" id="borderRadius" class="setting-input" readonly="readonly" />
+                          <div id="setting-borderRadius" class="setting-slider"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-borderSize"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="borderSize">Border Size:</label>
+                          <input type="text" id="borderSize" class="setting-input" readonly="readonly" />
+                          <div id="setting-borderSize" class="setting-slider"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End settings border -->
+
+              <!-- Start settings box-shadow -->
+              <div class="settings-box-shadow">
+                <div class="alert alert-dark setting-title" role="alert">
+                  <input type="checkbox" id="boxShadow-check" value="Box Shadow" checked="checked" />
+                  <label class="boxShadow-title" for="boxShadow-check">Box Shadow</label>
+
+                  <span class="title-checkbox">
+                    &nbsp;&nbsp;/&nbsp;
+                    <input type="checkbox" id="boxShadowInset" value="inset" checked="checked" />
+                    <label for="boxShadowInset">inset</label>
+                  </span>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="setting-container box-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-boxShadowOffsetY"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="boxShadowOffsetY">Vertical Position:</label>
+                          <input type="text" id="boxShadowOffsetY" class="setting-input multiple" readonly="readonly" />
+                          <div id="option-boxShadowOffsetY" class="setting-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container box-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-boxShadowOffsetX"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="boxShadowOffsetX">Horizontal Position:</label>
+                          <input type="text" id="boxShadowOffsetX" class="setting-input multiple" readonly="readonly" />
+                          <div id="option-boxShadowOffsetX" class="setting-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container box-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-boxShadowBlurRadius"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="boxShadowBlurRadius">Blur Radius:</label>
+                          <input type="text" id="boxShadowBlurRadius" class="setting-input multiple-blur"
+                            readonly="readonly" />
+                          <div id="option-boxShadowBlurRadius" class="setting-shadow-blur"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container box-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-boxShadowSpreadRadius"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="boxShadowSpreadRadius">Spread Radius:</label>
+                          <input type="text" id="boxShadowSpreadRadius" class="setting-input multiple"
+                            readonly="readonly" />
+                          <div id="option-boxShadowSpreadRadius" class="setting-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End settings box-shadow -->
+
+              <!-- Start settings text-shadow -->
+              <div class="settings-text-shadow">
+                <div class="alert alert-dark setting-title" role="alert">
+                  <input type="checkbox" id="textShadow-check" value="Text Shadow" checked="checked" />
+                  <label class="textShadow-title" for="textShadow-check">Text Shadow</label>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="setting-container text-shadow refresh-add">
+                      <div class="row  no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-textShadowOffsetY"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="textShadowOffsetY">Vertical Position:</label>
+                          <input type="text" id="textShadowOffsetY" class="setting-input multiple"
+                            readonly="readonly" />
+                          <div id="option-textShadowOffsetY" class="setting-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container text-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-textShadowOffsetX"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="textShadowOffsetX">Horizontal Position:</label>
+                          <input type="text" id="textShadowOffsetX" class="setting-input multiple"
+                            readonly="readonly" />
+                          <div id="option-textShadowOffsetX" class="setting-shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="setting-container text-shadow refresh-add">
+                      <div class="row no-gutters align-items-end">
+                        <!--                    <div class="col-auto">-->
+                        <!--                      <div class="refresh" id="refresh-textShadowBlurRadius"></div>-->
+                        <!--                    </div>-->
+                        <div class="col">
+                          <label for="textShadowBlurRadius">Blur Radius:</label>
+                          <input type="text" id="textShadowBlurRadius" class="setting-input multiple-blur"
+                            readonly="readonly" />
+                          <div id="option-textShadowBlurRadius" class="setting-shadow-blur"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End settings text-shadow -->
             </div>
-            <!-- End settings-text -->
-
-            <!-- Start Settings size -->
-            <div class="settings-size">
-              <div class="alert alert-dark setting-title" role="alert">
-                Size
-              </div>
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="setting-container refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-heightY"></div>
-                      </div>
-                      <div class="col">
-                        <label for="heightY">Vertical Size:</label>
-                        <input type="text" id="heightY" class="setting-input" readonly="readonly" />
-                        <div id="setting-heightY" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-autp">
-                        <div class="refresh" id="refresh-widthX"></div>
-                      </div>
-                      <div class="col">
-                        <label for="widthX">Horizontal Size:</label>
-                        <input type="text" id="widthX" class="setting-input" readonly="readonly" />
-                        <div id="setting-widthX" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Settings size -->
-
-            <!-- Start settings border -->
-            <div class="settings-border">
-              <div class="alert alert-dark setting-title" role="alert">
-                Border
-              </div>
-              <div class="row align-items-center">
-                <div class="col-12 mb-2">
-                  <label>Border Radius:</label>
-                  <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-5">
-                      <div class="form-check">
-                        <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusTopLeft"
-                          checked="" />
-                        <label class="form-check-label" for="radiusTopLeft">
-                          Top Left
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                      <div class="form-check">
-                        <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusTopRight" />
-                        <label class="form-check-label" for="radiusTopRight">
-                          Top Right
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                      <div class="form-check">
-                        <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusBottomLeft" />
-                        <label class="form-check-label" for="radiusBottomLeft">
-                          Bottom Left
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                      <div class="form-check">
-                        <input class="form-check-input checkbox bordercorner" type="checkbox" id="radiusBottomRight"
-                          checked="" />
-                        <label class="form-check-label" for="radiusBottomRight">
-                          Bottom Right
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container refresh-add border-radius">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-borderRadius"></div>
-                      </div>
-                      <div class="col">
-                        <label for="borderRadius">Border Radius:</label>
-                        <input type="text" id="borderRadius" class="setting-input" readonly="readonly" />
-                        <div id="setting-borderRadius" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-borderSize"></div>
-                      </div>
-                      <div class="col">
-                        <label for="borderSize">Border Size:</label>
-                        <input type="text" id="borderSize" class="setting-input" readonly="readonly" />
-                        <div id="setting-borderSize" class="setting-slider"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End settings border -->
-
-            <!-- Start settings box-shadow -->
-            <div class="settings-box-shadow">
-              <div class="alert alert-dark setting-title" role="alert">
-                <input type="checkbox" id="boxShadow-check" value="Box Shadow" checked="checked" />
-                <label class="boxShadow-title" for="boxShadow-check">Box Shadow</label>
-
-                <span class="title-checkbox">
-                  &nbsp;&nbsp;/&nbsp;
-                  <input type="checkbox" id="boxShadowInset" value="inset" checked="checked" />
-                  <label for="boxShadowInset">inset</label>
-                </span>
-              </div>
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="setting-container box-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-boxShadowOffsetY"></div>
-                      </div>
-                      <div class="col">
-                        <label for="boxShadowOffsetY">Vertical Position:</label>
-                        <input type="text" id="boxShadowOffsetY" class="setting-input multiple" readonly="readonly" />
-                        <div id="option-boxShadowOffsetY" class="setting-shadow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container box-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-boxShadowOffsetX"></div>
-                      </div>
-                      <div class="col">
-                        <label for="boxShadowOffsetX">Horizontal Position:</label>
-                        <input type="text" id="boxShadowOffsetX" class="setting-input multiple" readonly="readonly" />
-                        <div id="option-boxShadowOffsetX" class="setting-shadow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container box-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-boxShadowBlurRadius"></div>
-                      </div>
-                      <div class="col">
-                        <label for="boxShadowBlurRadius">Blur Radius:</label>
-                        <input type="text" id="boxShadowBlurRadius" class="setting-input multiple-blur"
-                          readonly="readonly" />
-                        <div id="option-boxShadowBlurRadius" class="setting-shadow-blur"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container box-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-boxShadowSpreadRadius"></div>
-                      </div>
-                      <div class="col">
-                        <label for="boxShadowSpreadRadius">Spread Radius:</label>
-                        <input type="text" id="boxShadowSpreadRadius" class="setting-input multiple"
-                          readonly="readonly" />
-                        <div id="option-boxShadowSpreadRadius" class="setting-shadow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End settings box-shadow -->
-
-            <!-- Start settings text-shadow -->
-            <div class="settings-text-shadow">
-              <div class="alert alert-dark setting-title" role="alert">
-                <input type="checkbox" id="textShadow-check" value="Text Shadow" checked="checked" />
-                <label class="textShadow-title" for="textShadow-check">Text Shadow</label>
-              </div>
-              <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <div class="setting-container text-shadow refresh-add">
-                    <div class="row  no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-textShadowOffsetY"></div>
-                      </div>
-                      <div class="col">
-                        <label for="textShadowOffsetY">Vertical Position:</label>
-                        <input type="text" id="textShadowOffsetY" class="setting-input multiple" readonly="readonly" />
-                        <div id="option-textShadowOffsetY" class="setting-shadow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container text-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-textShadowOffsetX"></div>
-                      </div>
-                      <div class="col">
-                        <label for="textShadowOffsetX">Horizontal Position:</label>
-                        <input type="text" id="textShadowOffsetX" class="setting-input multiple" readonly="readonly" />
-                        <div id="option-textShadowOffsetX" class="setting-shadow"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="setting-container text-shadow refresh-add">
-                    <div class="row no-gutters align-items-end">
-                      <div class="col-auto">
-                        <div class="refresh" id="refresh-textShadowBlurRadius"></div>
-                      </div>
-                      <div class="col">
-                        <label for="textShadowBlurRadius">Blur Radius:</label>
-                        <input type="text" id="textShadowBlurRadius" class="setting-input multiple-blur"
-                          readonly="readonly" />
-                        <div id="option-textShadowBlurRadius" class="setting-shadow-blur"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End settings text-shadow -->
+            <!-- End setup-one -->
           </div>
-          <!-- End setup-one -->
+          <!-- End settings -->
         </div>
-        <!-- End settings -->
       </div>
     </div>
-  </div>
 
-  <!-- Start Scripts -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script>
-    var $j = $.noConflict();
-  </script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script>
-    $j(function () {
-      $j('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-  <script src="js/jquery.1.4.2.min.js"></script>
-  <script src="js/jquery-ui-1.8.2.custom.min.js"></script>
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="js/colorpicker.js"></script>
-  <script src="js/button-picer.js"></script>
-  <!-- End Scripts -->
+    <!-- Start Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      var $j = $.noConflict();
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $j(function () {
+        $j('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script src="js/jquery.1.4.2.min.js"></script>
+    <script src="js/jquery-ui-1.8.2.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/colorpicker.js"></script>
+    <script src="js/button-picer.js"></script>
+    <!-- End Scripts -->
 </body>
 
 </html>
