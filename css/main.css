@@ -99,6 +99,7 @@ body .default-palettes ul .dropdown span {
 }
 body .default-palettes .current-palette, body .default-palettes .preview-swatch-color-bg {
   display: inline-block;
+  position: relative;
   margin-bottom: -1px;
   background-color: #FFF;
   padding: 6px 2px 4px 8px;
@@ -123,8 +124,8 @@ body .default-palettes .current-palette span, body .default-palettes .current-pa
 body .color-picker {
   clear: both;
   display: none;
-  position: relative;
-  top: 7px;
+  position: absolute;
+  top: 35px;
   z-index: 8;
 }
 body .color-container .form-check {
