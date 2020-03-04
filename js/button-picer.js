@@ -759,9 +759,11 @@
       });
 
       $("select").change(function() {
+        //   styles.fontFamily = $("option:selected").val();
         styles.fontFamily = $(this)
           .children("option:selected")
           .val();
+
         cssbuttongenerator.setStyles();
       });
 
@@ -963,6 +965,8 @@
         // Color picker for the background of preview area
         color: "#f5f5f5",
         onChange: function(hsb, hex, rgb) {
+          //   $(".preview-swatch-color, table").css("backgroundColor", "#" + hex);
+          // changed from table to class '.preview-area'
           $(".preview-swatch-color, .preview-area").css(
             "backgroundColor",
             "#" + hex
@@ -973,12 +977,18 @@
       $(".preview-swatch-color").click(function() {
         $(".preview-bg div").removeClass("selected");
         $(this).addClass("selected");
+
+        // $("table").css("background-image", "");
+        // changed from table to class '.preview-area'
         $(".preview-area").css("background-image", "");
       });
 
       $(".preview-swatch-image").click(function() {
         $(".preview-bg div").removeClass("selected");
         $(this).addClass("selected");
+
+        // $('table').css('background-image','url(images/preview-bg.jpg)');
+        // changed from table to class '.preview-area'
         $(".preview-area").css(
           "background-image",
           "url(images/preview-bg.jpg)"
