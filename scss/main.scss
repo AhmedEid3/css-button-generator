@@ -14,6 +14,10 @@ body {
       border-color: #cccccc;
     }
   }
+  input[type="checkbox"],
+  input[type="checkbox"] + label {
+    cursor: pointer;
+  }
 }
 .h2 {
   margin-bottom: 20px;
