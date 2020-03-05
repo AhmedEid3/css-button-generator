@@ -317,16 +317,17 @@
         var pDefaultItem = "";
         pDefaultItem += '<li id="palette' + i + '">';
         pDefaultItem +=
-          '<span class="bgTopColor" title="BG Gradient Color1"></span>';
+          '<span class="bgTopColor" title="BG Gradient Color1" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
-          '<span class="bgBottomColor" title="BG Gradient Color2"></span>';
-        pDefaultItem += '<span class="fontColor" title="Font Color"></span>';
+          '<span class="bgBottomColor" title="BG Gradient Color2" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
-          '<span class="borderColor" title="Border Color"></span>';
+          '<span class="fontColor" title="Font Color" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
-          '<span class="boxShadowColor" title="Box Shadow Color"></span>';
+          '<span class="borderColor" title="Border Color" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
-          '<span class="textShadowColor" title="Text Shadow Color"></span>';
+          '<span class="boxShadowColor" title="Box Shadow Color" data-toggle="tooltip" data-placement="top"></span>';
+        pDefaultItem +=
+          '<span class="textShadowColor" title="Text Shadow Color" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem += "</li>";
         $(".default-palettes ul").append(pDefaultItem);
         $("#palette" + i + " span").each(function(index) {
@@ -599,39 +600,38 @@
       //     borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
       // }
       if (styles.borderRadius) {
+        borderRadius1 = "";
+        borderRadius1 +=
+          "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
+        borderRadius1 +=
+          "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
+        borderRadius1 +=
+          "	border-top-left-radius:" + styles.borderRadius + ";\n";
 
-          borderRadius1 = "";
-          borderRadius1 +=
-              "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
-          borderRadius1 +=
-              "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
-          borderRadius1 +=
-              "	border-top-left-radius:" + styles.borderRadius + ";\n";
-
-          borderRadius2 = "";
-          borderRadius2 +=
-              "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
-          borderRadius2 +=
-              "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
-          borderRadius2 +=
-              "	border-top-right-radius:" + styles.borderRadius + ";\n";
-          borderRadius3 = "";
-          borderRadius3 +=
-              "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
-          borderRadius3 +=
-              "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
-          borderRadius3 +=
-              "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
-          borderRadius4 = "";
-          borderRadius4 +=
-              "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
-          borderRadius4 +=
-              "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
-          borderRadius4 +=
-              "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
+        borderRadius2 = "";
+        borderRadius2 +=
+          "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
+        borderRadius2 +=
+          "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
+        borderRadius2 +=
+          "	border-top-right-radius:" + styles.borderRadius + ";\n";
+        borderRadius3 = "";
+        borderRadius3 +=
+          "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
+        borderRadius3 +=
+          "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
+        borderRadius3 +=
+          "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
+        borderRadius4 = "";
+        borderRadius4 +=
+          "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
+        borderRadius4 +=
+          "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
+        borderRadius4 +=
+          "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
         borderRadius = "";
         borderRadius =
-            borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
+          borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
       }
 
       if ($.browser.msie) {
