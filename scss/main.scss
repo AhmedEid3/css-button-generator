@@ -5,6 +5,10 @@ body {
   position         : relative;
   background-color : $bg-color;
   color            : #1e1c21;
+  overflow-y: hidden;
+  @media (max-width: 767.98px) {
+    overflow-y: auto;
+  }
   // font-family: Calibri, Arial;
   // font-size: 15px;
   // padding-top: 20px;
@@ -287,7 +291,25 @@ body {
 }
 
 
-//start buttons template
+.trigger-btns-template {
+  margin : 7px 0;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+.sidenav-overlay {
+  position         : absolute;
+  top              : 0;
+  left             : 0;
+  bottom           : 0;
+  right            : 0;
+  background-color : rgba(black, 0.4);
+  z-index: 99;
+  display     : none;
+  transition: 0.3s all ease-in-out;
+  transform: translate(100%);
+  will-change: transform;
+}
 .btns-template {
   padding          : 15px 15px 0;
   background-color : #eee;
@@ -299,10 +321,15 @@ body {
   overflow-y       : scroll;
   position         : absolute;
   top              : 0;
-  z-index: 9999;
-  box-sizing: content-box;
+  z-index: 99999;
+  will-change: transform;
+  transition: 0.3s all ease-in-out;
+  @media (max-width : 991.98px) {
+    transform: translate(-100%);
+  }
+  //box-sizing: content-box;
   .container-btn-template {
-    max-width: 115px;
+    width: 110px;
     background-color: #fff;
     padding: 5px;
     margin: 5px;
