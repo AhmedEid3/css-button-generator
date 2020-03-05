@@ -1,140 +1,145 @@
-$bg-color: #f5f5f5;
+$bg-color : #f5f5f5;
+
 /*General rules*/
 body {
-  background-color: $bg-color;
-  color: #1e1c21;
+  position         : relative;
+  background-color : $bg-color;
+  color            : #1e1c21;
   // font-family: Calibri, Arial;
   // font-size: 15px;
   // padding-top: 20px;
   // background-image: url("../images/bg.png");
-  margin: 0;
-  padding: 0;
-  border: 0;
-  line-height: 1;
-  font-family: arial;
-  font-size: 12px;
+  margin           : 0;
+  padding          : 0;
+  border           : 0;
+  line-height      : 1;
+  font-family      : arial;
+  font-size        : 12px;
 
   .form-control {
-    font-size: 13px;
+    font-size : 13px;
 
     &:focus {
-      background-color: #EFFBFF;
-      border-color: #7b96ca;
+      background-color : #EFFBFF;
+      border-color     : #7b96ca;
     }
   }
 
   .form-check {
-    border-radius: 4px;
-    border: 1px solid #dcdcdc;
-    color: #777777;
+    border-radius : 4px;
+    border        : 1px solid #dcdcdc;
+    color         : #777777;
 
-    padding: 0 5px;
-    margin-right: 7px;
-    margin-bottom: 5px;
-    background: -webkit-gradient(
-                    linear,
-                    left top,
-                    left bottom,
-                    color-stop(0.05, #ededed),
-                    color-stop(1, #dfdfdf)
+    padding       : 0 5px;
+    margin-right  : 7px;
+    margin-bottom : 5px;
+    background    : -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0.05, #ededed),
+            color-stop(1, #dfdfdf)
     );
 
     .form-check-input {
-      position: relative;
-      margin: 0 2px 0 0;
-      cursor: pointer;
+      position : relative;
+      margin   : 0 2px 0 0;
+      cursor   : pointer;
     }
 
     .form-check-label {
-      cursor: pointer;
-      font-size: 11px;
-      font-weight: normal;
-      padding: 4px 3px;
+      cursor        : pointer;
+      font-size     : 11px;
+      font-weight   : normal;
+      padding       : 4px 3px;
       //margin: 0 5px 0 0;
-      margin-bottom: 0 !important;
+      margin-bottom : 0 !important;
     }
   }
 
   input[type="checkbox"],
   input[type="checkbox"] + label {
-    cursor: pointer;
+    cursor : pointer;
   }
+
   .refresh-add {
-    margin-bottom: 18px;
+    margin-bottom : 18px;
 
     .refresh {
-      cursor: pointer;
-      height: 20px;
-      margin-right: 8px;
-      width: 20px;
-      background-image: url("../images/refresh.png");
-      background-repeat: no-repeat;
+      cursor            : pointer;
+      height            : 20px;
+      margin-right      : 8px;
+      width             : 20px;
+      background-image  : url("../images/refresh.png");
+      background-repeat : no-repeat;
     }
   }
 
   .default-palettes {
-    font-size: 12px;
-    margin: 3px 0 0 2px;
-  .form-check {
-    label {
-      margin-bottom: 0;
+    font-size : 12px;
+    margin    : 3px 0 0 2px;
+
+    .form-check {
+      label {
+        margin-bottom : 0;
+      }
     }
-  }
+
     ul {
-      background-color: #ffffff;
-      border: 1px solid #bfc4ce;
-      display: none;
-      height: 200px;
-      margin: 0 0 0 6px;
-      overflow: auto;
-      position: absolute;
-      width: 180px;
-      z-index: 4;
+      background-color : #ffffff;
+      border           : 1px solid #bfc4ce;
+      display          : none;
+      height           : 200px;
+      margin           : 0 0 0 6px;
+      overflow         : auto;
+      position         : absolute;
+      width            : 180px;
+      z-index          : 4;
 
       li {
-        cursor: pointer;
-        padding: 8px 0 4px 10px;
-        background-color: #f8f8f8;
-        border-bottom: 1px solid #d8dfea;
-        display: block;
-        margin-bottom: 1px;
+        cursor           : pointer;
+        padding          : 8px 0 4px 10px;
+        background-color : #f8f8f8;
+        border-bottom    : 1px solid #d8dfea;
+        display          : block;
+        margin-bottom    : 1px;
 
         &:hover {
-          background-color: #fff8cc;
-          border-color: #ffe222;
+          background-color : #fff8cc;
+          border-color     : #ffe222;
         }
 
         &.selected {
-          background-color: #ebecef;
-          border-color: #bfc4ce;
+          background-color : #ebecef;
+          border-color     : #bfc4ce;
         }
       }
 
       span {
-        border: 1px solid #bfc4ce;
-        display: inline-block;
-        height: 18px;
-        margin-right: 4px;
-        width: 18px;
-        top: 0;
+        border       : 1px solid #bfc4ce;
+        display      : inline-block;
+        height       : 18px;
+        margin-right : 4px;
+        width        : 18px;
+        top          : 0;
       }
 
       .dropdown {
-        float: left;
-        padding: 0 0 4px 0;
-        z-index: 4;
+        float   : left;
+        padding : 0 0 4px 0;
+        z-index : 4;
 
         span {
-          background-color: #ffffff;
-          border: 1px solid #dcdcdc;
-          color: #777777;
-          cursor: pointer;
-          display: block;
-          font-weight: bold;
-          margin-right: 3px;
-          padding: 2px 9px;
-          position: relative;
-          top: 2px;
+          background-color : #ffffff;
+          border           : 1px solid #dcdcdc;
+          color            : #777777;
+          cursor           : pointer;
+          display          : block;
+          font-weight      : bold;
+          margin-right     : 3px;
+          padding          : 2px 9px;
+          position         : relative;
+          top              : 2px;
         }
       }
     }
@@ -143,41 +148,41 @@ body {
       //border-radius: 5px;
       //background-color: #efefef;
       //padding: 2px 5px;
-      display: inline-block;
-      position: relative;
+      display             : inline-block;
+      position            : relative;
       //margin: -7px 8px 0 7px;
-      margin-bottom: -1px;
-      background-color: #FFF;
-      padding: 6px 2px 4px 8px;
+      margin-bottom       : -1px;
+      background-color    : #FFF;
+      padding             : 6px 2px 4px 8px;
       //border: 1px solid #E5E5E5;
-      border-bottom-width: 0;
+      border-bottom-width : 0;
 
       &.selected {
-        border-color: #666666;
-        -moz-box-shadow: inset 0px 0px 0px 2px #ffffff;
-        -webkit-box-shadow: inset 0px 0px 0px 2px #ffffff;
-        box-shadow: inset 0px 0px 0px 2px #ffffff;
+        border-color       : #666666;
+        -moz-box-shadow    : inset 0px 0px 0px 2px #ffffff;
+        -webkit-box-shadow : inset 0px 0px 0px 2px #ffffff;
+        box-shadow         : inset 0px 0px 0px 2px #ffffff;
       }
 
       span, .preview-swatch-color {
-        font-size: 20px;
-        height: 20px;
-        width: 20px;
-        box-shadow: inset 0 0 0 1px #fff;
-        border: 1px solid #BFC4CE;
-        margin-right: 5px;
-        cursor: pointer;
-        display: inline-block;
+        font-size    : 20px;
+        height       : 20px;
+        width        : 20px;
+        box-shadow   : inset 0 0 0 1px #fff;
+        border       : 1px solid #BFC4CE;
+        margin-right : 5px;
+        cursor       : pointer;
+        display      : inline-block;
       }
     }
   }
 
   .color-picker {
-    clear: both;
-    display: none;
-    position: absolute;
-    top: 35px;
-    z-index: 8;
+    clear    : both;
+    display  : none;
+    position : absolute;
+    top      : 35px;
+    z-index  : 8;
   }
 
   .color-container {
@@ -186,133 +191,179 @@ body {
       //margin-right: 5px;
       //background: #ffffff;
 
-      background-color: #ededed;
-      border-radius: 4px;
-      border: 1px solid #dcdcdc;
+      background-color : #ededed;
+      border-radius    : 4px;
+      border           : 1px solid #dcdcdc;
 
-      margin-right: 8px;
-      padding: 4px 5px;
+      margin-right     : 8px;
+      padding          : 4px 5px;
 
 
       label {
-        font-size: 11px;
-        color: #777;
-        text-shadow: 1px 1px 0 #f8f8f8;
-        font-weight: normal;
+        font-size   : 11px;
+        color       : #777;
+        text-shadow : 1px 1px 0 #f8f8f8;
+        font-weight : normal;
       }
     }
   }
 
   .ui-corner-all {
-    border-radius: 6px !important;
+    border-radius : 6px !important;
   }
 
   .ui-widget-content {
-    border: 1px solid #5283D9;
-    background-color: #B6D6ED;
-    color: #222;
+    border           : 1px solid #5283D9;
+    background-color : #B6D6ED;
+    color            : #222;
   }
 
   .ui-widget {
-    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
-    font-size: 1.1em;
+    font-family : Lucida Grande, Lucida Sans, Arial, sans-serif;
+    font-size   : 1.1em;
   }
 
   .ui-slider-horizontal {
-    height: 9px;
+    height : 9px;
   }
 
   .ui-slider {
-    position: relative;
-    text-align: left;
+    position   : relative;
+    text-align : left;
   }
 
   .ui-slider-horizontal .ui-slider-range-min {
-    left: 0;
+    left : 0;
   }
 
   .ui-slider-horizontal .ui-slider-range {
-    top: 0;
-    height: 100%;
+    top    : 0;
+    height : 100%;
   }
 
   .ui-slider .ui-slider-range {
-    position: absolute;
-    z-index: 1;
-    font-size: .7em;
-    display: block;
-    border: 0;
-    background-position: 0 0;
+    position            : absolute;
+    z-index             : 1;
+    font-size           : .7em;
+    display             : block;
+    border              : 0;
+    background-position : 0 0;
   }
 
   .ui-widget-header {
-    border: 1px solid #4297d7;
-    background-color: #5c9ccc;
-    color: #fff;
-    font-weight: 700;
+    border           : 1px solid #4297d7;
+    background-color : #5c9ccc;
+    color            : #fff;
+    font-weight      : 700;
   }
 
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-    border: 1px solid #375994;
-    background-color: #fff;
-    font-weight: 700;
-    color: #2e6e9e;
+    border           : 1px solid #375994;
+    background-color : #fff;
+    font-weight      : 700;
+    color            : #2e6e9e;
   }
+
   .ui-slider-horizontal .ui-slider-handle {
-    top: -.3em;
-    margin-left: -.6em;
+    top         : -.3em;
+    margin-left : -.6em;
   }
+
   .ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 15px;
-    height: 15px;
-    border-radius: 50% !important;
-    cursor: default;
+    position      : absolute;
+    z-index       : 2;
+    width         : 15px;
+    height        : 15px;
+    border-radius : 50% !important;
+    cursor        : default;
   }
 }
 
 .h2 {
-  margin-bottom: 20px;
-  @media (max-width: 767.98px) {
-    font-size: 1.5rem;
+  margin-bottom : 20px;
+  @media (max-width : 767.98px) {
+    font-size : 1.5rem;
   }
 }
+
+
+//start buttons template
+.btns-template {
+  padding          : 15px 15px 0;
+  background-color : #eee;
+  border-right     : 1px solid #E1E1E1;
+  bottom           : 0;
+  left             : 0;
+  width            : 300px;
+  overflow-x       : hidden;
+  overflow-y       : scroll;
+  position         : absolute;
+  top              : 0;
+  z-index: 9999;
+  box-sizing: content-box;
+  .container-btn-template {
+    max-width: 115px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-color: #E1E1E1;
+    border-width: 0 1px 2px;
+    border-style: solid;
+    box-sizing: content-box;
+    .preview-btn-template {
+      box-sizing: content-box;
+      padding: 15px 15px 13px;
+      text-align: center;
+      height: 38px;
+      .btn-style-template {
+        display: block;
+        padding: 9px 10px;
+        font-size: 15px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+//end buttons template
 
 /*start main section*/
 .main-section {
   // background-color: #ffffff;
-  padding: 0 25px;
+  padding     : 0 25px;
   // border-radius: 7px;
-  border-left: 1px solid #e1e1e1;
+  //border-left : 1px solid #e1e1e1;
   // height: calc(100vh - 85px);
-  height: 100vh;
-  overflow-y: auto;
-  @media (max-width: 767.98px) {
-    border-radius: 5px;
-    border: 1px solid #e1e1e1;
+  height      : 100vh;
+  overflow-y  : auto;
+  @media (max-width : 767.98px) {
+    border-radius : 5px;
+    border        : 1px solid #e1e1e1;
   }
+
   .title {
-    color: #568eea;
-    font-size: 26px;
-    font-style: italic;
-    margin: 20px 10px;
-    text-shadow: 1px 1px 0 #fff;
-    font-weight: bold;
+    color       : #568eea;
+    font-size   : 26px;
+    font-style  : italic;
+    margin      : 20px 10px;
+    text-shadow : 1px 1px 0 #fff;
+    font-weight : bold;
   }
 
   .preview {
-    border-radius: 8px;
-    background-color: #fff;
-    border: 1px solid #e1e1e1;
-    position: relative;
-    padding: 15px;
+    border-radius    : 8px;
+    background-color : #fff;
+    border           : 1px solid #e1e1e1;
+    position         : relative;
+    padding          : 15px;
 
     .preview-area {
-      background-color: #f5f5f5;
-      border: 1px solid #e5e5e5;
-      height: 230px;
-      width: 100%;
+      background-color : #f5f5f5;
+      border           : 1px solid #e5e5e5;
+      height           : 230px;
+      width            : 100%;
     }
   }
 
@@ -347,17 +398,17 @@ body {
   //  }
   //}
   .step-two-three {
-    margin-top: 30px;
+    margin-top : 30px;
 
     h5 {
-      font-weight: bold;
+      font-weight : bold;
     }
 
     textarea.form-control {
-      height: 220px;
-      background-color: #fcfcfc;
-      color: #444;
-      font-size: 13px;
+      height           : 220px;
+      background-color : #fcfcfc;
+      color            : #444;
+      font-size        : 13px;
     }
   }
 }
@@ -368,91 +419,92 @@ body {
 .settings {
   // border-radius: 7px;
   // height: calc(100vh - 85px);
-  background-color: #ffffff;
-  border-left: 1px solid #e1e1e1;
-  border-right: 1px solid #e1e1e1;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  background-color : #ffffff;
+  border-left      : 1px solid #e1e1e1;
+  border-right     : 1px solid #e1e1e1;
+  height           : 100vh;
+  overflow-y       : auto;
+  overflow-x       : hidden;
   // width: 418px;
-  padding: 10px 18px 20px;
-  @media (max-width: 767.98px) {
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #e1e1e1;
+  padding          : 10px 18px 20px;
+  @media (max-width : 767.98px) {
+    margin-top    : 5px;
+    border-radius : 5px;
+    border        : 1px solid #e1e1e1;
   }
+
   .form-group {
-    margin-bottom: 0.75rem;
+    margin-bottom : 0.75rem;
   }
 
   label {
-    font-size: 12px;
+    font-size : 12px;
   }
 
   select {
-    background-color: #fcfcfc;
-    border-color: #bbbbbb #dddddd #eeeeee;
-    border-style: solid;
-    border-width: 1px;
-    color: #444;
-    font-family: arial;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 2px;
-    width: 100%;
-    min-height: 13px;
+    background-color : #fcfcfc;
+    border-color     : #bbbbbb #dddddd #eeeeee;
+    border-style     : solid;
+    border-width     : 1px;
+    color            : #444;
+    font-family      : arial;
+    font-size        : 13px;
+    letter-spacing   : 1px;
+    padding          : 2px;
+    width            : 100%;
+    min-height       : 13px;
 
     &:focus {
-      background-color: #EFFBFF;
-      border-color: #7b96ca;
+      background-color : #EFFBFF;
+      border-color     : #7b96ca;
     }
   }
 
   .setting-slider,
   .setting-shadow,
   .setting-shadow-blur {
-    margin: 13px 0 5px;
-    width: 100%;
+    margin : 13px 0 5px;
+    width  : 100%;
   }
 
   .setting-input {
-    border: 0;
-    color: #F6931F;
-    width: 40px;
-    margin: 0;
+    border      : 0;
+    color       : #F6931F;
+    width       : 40px;
+    margin      : 0;
 
-    font-weight: 700;
-    font-size: 13px;
+    font-weight : 700;
+    font-size   : 13px;
   }
 
 
   .setup-one {
     .form-control {
-      height: 100%;
-      padding: 3px 8px;
+      height  : 100%;
+      padding : 3px 8px;
     }
 
     label {
-      margin-bottom: 0.25rem;
+      margin-bottom : 0.25rem;
     }
 
     h5 {
-      font-weight: bold;
+      font-weight : bold;
     }
 
     .setting-title {
-      border-radius: 6px;
-      background-color: #eee;
-      border: 1px solid #ddd;
-      margin: 10px 0 15px;
-      padding: 5px 10px;
-      font-weight: 700;
-      font-size: 13px;
+      border-radius    : 6px;
+      background-color : #eee;
+      border           : 1px solid #ddd;
+      margin           : 10px 0 15px;
+      padding          : 5px 10px;
+      font-weight      : 700;
+      font-size        : 13px;
     }
 
 
     .settings-text {
-      padding-bottom: 15px;
+      padding-bottom : 15px;
     }
   }
 }

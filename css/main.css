@@ -1,5 +1,6 @@
 /*General rules*/
 body {
+  position: relative;
   background-color: #f5f5f5;
   color: #1e1c21;
   margin: 0;
@@ -223,10 +224,48 @@ body .ui-slider .ui-slider-handle {
   }
 }
 
+.btns-template {
+  padding: 15px 15px 0;
+  background-color: #eee;
+  border-right: 1px solid #E1E1E1;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  box-sizing: content-box;
+}
+.btns-template .container-btn-template {
+  max-width: 115px;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px;
+  border-color: #E1E1E1;
+  border-width: 0 1px 2px;
+  border-style: solid;
+  box-sizing: content-box;
+}
+.btns-template .container-btn-template .preview-btn-template {
+  box-sizing: content-box;
+  padding: 15px 15px 13px;
+  text-align: center;
+  height: 38px;
+}
+.btns-template .container-btn-template .preview-btn-template .btn-style-template {
+  display: block;
+  padding: 9px 10px;
+  font-size: 15px;
+}
+.btns-template .container-btn-template .preview-btn-template .btn-style-template:hover {
+  text-decoration: underline;
+}
+
 /*start main section*/
 .main-section {
   padding: 0 25px;
-  border-left: 1px solid #e1e1e1;
   height: 100vh;
   overflow-y: auto;
 }
