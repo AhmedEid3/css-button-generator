@@ -11,22 +11,23 @@ $j(document).ready(function () {
     $(window).resize(function () {
         if ($j('body').outerWidth() > 991) {
             changeBtnsTemplateWidth();
-            $(".btns-template").fadeIn(1).css({transform: "translate(0%)"});
+            $j(".btns-template").fadeIn(1).css({transform: "translate(0%)"});
         } else {
             $j('.btns-template').css('width', '300px');
-            $(".btns-template").fadeIn(1).css({transform: "translate(-100%)"});
+            $j(".btns-template").fadeIn(1).css({transform: "translate(-100%)"});
         }
     });
     // Open side nav
-    $(".trigger-btns-template").click(function () {
+    $j(".trigger-btns-template").click(function () {
         $(".sidenav-overlay").fadeIn(1).css({transform: "translate(0%)"});
         $(".btns-template").fadeIn(1).css({transform: "translate(0%)"});
     });
-
     // close side nav
-    $(".sidenav-overlay").click(function () {
-        $(".sidenav-overlay").css({transform: "translate(-100%)"});
-        $(".btns-template").css({transform: "translate(-100%)"});
+    $j(".sidenav-overlay, .btn-style-template").click(function () {
+        if($j('.sidenav-overlay').css('display') != 'none'){
+            $j(".sidenav-overlay").css({transform: "translate(-100%)"});
+            $j(".btns-template").css({transform: "translate(-100%)"});
+        }
     });
 
 });
