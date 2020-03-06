@@ -1606,6 +1606,7 @@
       cssbuttongenerator.setStyles();
     });
 
+    // change background area
     $(".preview-btn-template").click(function() {
       var numberOfClass = $(this)
         .attr("class")
