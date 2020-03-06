@@ -1,13 +1,13 @@
 @mixin defaultValue {
-  cursor          : pointer;
-  font-family     : Arial;
-  display         : inline-block;
-  text-decoration : none;
+  cursor: pointer;
+  font-family: Arial;
+  display: inline-block;
+  text-decoration: none;
 }
 
 @mixin active {
-  position : relative;
-  top      : 1px;
+  position: relative;
+  top: 1px;
 }
 
 .bg-style-0 {
@@ -43,12 +43,9 @@
     background-color: #7892c2;
     border-radius: 10px;
     border: 1px solid #4e6096;
-
     color: #ffffff;
-
     font-size: 19px;
     padding: 12px 37px;
-
     text-shadow: 0px 1px 0px #283966;
 
     &:hover {
@@ -63,20 +60,18 @@
 }
 
 .bg-style-2 {
-  background-color : #f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-2 {
     @include defaultValue;
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
     border-radius: 8px;
-
     color: #ffffff;
-
     font-size: 20px;
     font-weight: bold;
     padding: 13px 32px;
-
     text-shadow: 0px 1px 0px #3d768a;
 
     &:hover {
@@ -91,7 +86,8 @@
 }
 
 .bg-style-3 {
-  background-color:#e8e7e2;
+  background-color: #e8e7e2;
+
   .btn-style-3 {
     @include defaultValue;
     box-shadow: inset 0px 1px 3px 0px #91b8b3;
@@ -120,7 +116,8 @@
 }
 
 .bg-style-4 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-4 {
     @include defaultValue;
     box-shadow: 0px 10px 14px -7px #3e7327;
@@ -149,7 +146,8 @@
 }
 
 .bg-style-5 {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
+
   .btn-style-5 {
     @include defaultValue;
     box-shadow: inset 0px 39px 0px -24px #e67a73;
@@ -175,7 +173,8 @@
 }
 
 .bg-style-6 {
-  background-color:#2a2218;
+  background-color: #2a2218;
+
   .btn-style-6 {
     @include defaultValue;
     box-shadow: inset 0px 34px 0px -15px #b54b3a;
@@ -201,7 +200,8 @@
 }
 
 .bg-style-7 {
-  background-color:#1c1c1e;
+  background-color: #1c1c1e;
+
   .btn-style-7 {
     @include defaultValue;
     box-shadow: inset 0px -3px 7px 0px #29bbff;
@@ -229,7 +229,8 @@
 }
 
 .bg-style-8 {
-  background-color:#3f5c93;
+  background-color: #3f5c93;
+
   .btn-style-8 {
     @include defaultValue;
     box-shadow: inset 0px 0px 15px 3px #23395e;
@@ -257,7 +258,8 @@
 }
 
 .bg-style-9 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-9 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #cf866c;
@@ -285,7 +287,8 @@
 }
 
 .bg-style-10 {
-  background-color:#2d2e29;
+  background-color: #2d2e29;
+
   .btn-style-10 {
     @include defaultValue;
     box-shadow: 0px 1px 0px 0px #1c1b18;
@@ -314,7 +317,8 @@
 }
 
 .bg-style-11 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-11 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #a6827e;
@@ -342,7 +346,8 @@
 }
 
 .bg-style-12 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-12 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #54a3f7;
@@ -370,7 +375,8 @@
 }
 
 .bg-style-13 {
-  background-color:#e2e2e2;
+  background-color: #e2e2e2;
+
   .btn-style-13 {
     @include defaultValue;
     box-shadow: 0px 1px 0px 0px #f0f7fa;
@@ -399,7 +405,8 @@
 }
 
 .bg-style-14 {
-  background-color:#e2e2e2;
+  background-color: #e2e2e2;
+
   .btn-style-14 {
     @include defaultValue;
     box-shadow: 0px 1px 0px 0px #fff6af;
@@ -428,7 +435,8 @@
 }
 
 .bg-style-15 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-15 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #9acc85;
@@ -454,7 +462,8 @@
 }
 
 .bg-style-16 {
-  background-color:#3b5898;
+  background-color: #3b5898;
+
   .btn-style-16 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #7a8eb9;
@@ -480,7 +489,8 @@
 }
 
 .bg-style-17 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-17 {
     @include defaultValue;
     box-shadow: 3px 4px 0px 0px #899599;
@@ -508,7 +518,8 @@
 }
 
 .bg-style-18 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-18 {
     @include defaultValue;
     box-shadow: 3px 4px 0px 0px #8a2a21;
@@ -536,7 +547,8 @@
 }
 
 .bg-style-19 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-19 {
     @include defaultValue;
     box-shadow: 3px 4px 0px 0px #1564ad;
@@ -565,7 +577,8 @@
 }
 
 .bg-style-20 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-20 {
     @include defaultValue;
     box-shadow: inset 0px 0px 14px -3px #f2fadc;
@@ -594,7 +607,8 @@
 }
 
 .bg-style-21 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-21 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #efdcfb;
@@ -623,7 +637,8 @@
 }
 
 .bg-style-22 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-22 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #dcecfb;
@@ -652,7 +667,8 @@
 }
 
 .bg-style-23 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-23 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -681,7 +697,8 @@
 }
 
 .bg-style-24 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-24 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #f7c5c0;
@@ -710,7 +727,8 @@
 }
 
 .bg-style-25 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-25 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #bee2f9;
@@ -739,7 +757,8 @@
 }
 
 .bg-style-26 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-26 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #fff6af;
@@ -768,7 +787,8 @@
 }
 
 .bg-style-27 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-27 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #a4e271;
@@ -797,7 +817,8 @@
 }
 
 .bg-style-28 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-28 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -826,7 +847,8 @@
 }
 
 .bg-style-29 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-29 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #e184f3;
@@ -855,7 +877,8 @@
 }
 
 .bg-style-30 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-30 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -884,7 +907,8 @@
 }
 
 .bg-style-31 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-31 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #fbafe3;
@@ -912,8 +936,9 @@
   }
 }
 
-.bg-style-32{
-background-color:#f5f5f5;
+.bg-style-32 {
+  background-color: #f5f5f5;
+
   .btn-style-32 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #f9eca0;
@@ -942,7 +967,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-33 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-33 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #f5978e;
@@ -971,7 +997,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-34 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-34 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #d9fbbe;
@@ -1000,7 +1027,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-35 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-35 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #fce2c1;
@@ -1029,7 +1057,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-36 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-36 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -1058,7 +1087,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-37 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-37 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #bbdaf7;
@@ -1087,7 +1117,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-38 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-38 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #caefab;
@@ -1116,7 +1147,8 @@ background-color:#f5f5f5;
 }
 
 .bg-style-39 {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
+
   .btn-style-39 {
     @include defaultValue;
     box-shadow: inset 0px 1px 0px 0px #f29c93;

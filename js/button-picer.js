@@ -4,6 +4,7 @@
     borderRadius3 = "",
     borderRadius4 = "",
     borderRadius = "";
+
   function pSwatches(
     pContainer,
     bgTopColor,
@@ -28,30 +29,30 @@
   var pArray = []; // This array includes predefined colors for default palettes
   pArray = pSwatches(
     pArray,
-    "#ededed",
-    "#dfdfdf",
-    "#777777",
-    "#dcdcdc",
+    "#44c767",
+    "#5cbf2a",
     "#ffffff",
-    "#ffffff"
+    "#18ab29",
+    "",
+    "#2f6627"
   ); // Grey
   pArray = pSwatches(
     pArray,
-    "#fe1a00",
-    "#ce0100",
+    "#7892c2",
+    "#476e9e",
     "#ffffff",
-    "#d83526",
-    "#f29c93",
-    "#b23e35"
+    "#4e6096",
+    "#9fb4f2",
+    "#283966"
   ); // Red
   pArray = pSwatches(
     pArray,
-    "#77d42a",
-    "#5cb811",
-    "#306108",
-    "#268a16",
-    "#caefab",
-    "#aade7c"
+    "#599bb3",
+    "#408c99",
+    "#ffffff",
+    "#599bb3",
+    "#276873",
+    "#3d768a"
   ); // Green
   pArray = pSwatches(
     pArray,
@@ -317,9 +318,9 @@
         var pDefaultItem = "";
         pDefaultItem += '<li id="palette' + i + '">';
         pDefaultItem +=
-          '<span class="bgTopColor" title="BG Gradient Color1" data-toggle="tooltip" data-placement="top"></span>';
+          '<span class="bgTopColor" title="Background" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
-          '<span class="bgBottomColor" title="BG Gradient Color2" data-toggle="tooltip" data-placement="top"></span>';
+          '<span class="bgBottomColor" title="Background Hover" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
           '<span class="fontColor" title="Font Color" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
@@ -328,6 +329,7 @@
           '<span class="boxShadowColor" title="Box Shadow Color" data-toggle="tooltip" data-placement="top"></span>';
         pDefaultItem +=
           '<span class="textShadowColor" title="Text Shadow Color" data-toggle="tooltip" data-placement="top"></span>';
+
         pDefaultItem += "</li>";
         $(".default-palettes ul").append(pDefaultItem);
         $("#palette" + i + " span").each(function(index) {
@@ -385,11 +387,25 @@
 
       if ($("#transparent").is(":checked")) {
         background = "	background-color:transparent;\n";
-        $(".current-palette .bgTopColor").addClass("unavailable");
-        $(".current-palette .bgBottomColor").addClass("unavailable");
+        $(".current-palette .bgTopColor")
+          .addClass("unavailable")
+          .attr({
+            onClick: "event.stopPropagation(); ",
+            "data-original-title": "unavailable"
+          });
+        $(".current-palette .bgBottomColor")
+          .addClass("unavailable")
+          .attr({
+            onClick: "event.stopPropagation(); ",
+            "data-original-title": "unavailable"
+          });
       } else {
-        $(".current-palette .bgTopColor").removeClass("unavailable");
-        $(".current-palette .bgBottomColor").removeClass("unavailable");
+        $(".current-palette .bgTopColor")
+          .removeClass("unavailable")
+          .attr({ onClick: "", "data-original-title": "Background Color" });
+        $(".current-palette .bgBottomColor")
+          .removeClass("unavailable")
+          .attr({ onClick: "", "data-original-title": "Background Hover" });
       }
 
       if ($("#solid").is(":checked")) {
@@ -400,17 +416,23 @@
         ihoverBackground += "." + customClass + ":hover {\n";
         ihoverBackground += "	background-color:" + styles.bgBottomColor + ";\n";
         ihoverBackground += "}";
-        $(".current-palette .bgTopColor").attr("title", "Background Color");
+        $(".current-palette .bgTopColor").attr(
+          "data-original-title",
+          "Background Color"
+        );
         $(".current-palette .bgBottomColor").attr(
-          "title",
-          ":hover Background Color"
+          "data-original-title",
+          "Background hover"
         );
       } else {
-        $(".current-palette .bgTopColor").attr("title", "BG Gradient Color1");
-        $(".current-palette .bgBottomColor").attr(
-          "title",
-          "BG Gradient Color2"
-        );
+        $(".current-palette .bgTopColor").attr({
+          "data-original-title": "Gradient Top Color",
+          title: "Gradient Top Color"
+        });
+        $(".current-palette .bgBottomColor").attr({
+          "data-original-title": "Gradient Bottom Color",
+          title: "Gradient Bottom Color"
+        });
       }
 
       if (!$("#solid").is(":checked") && !$("#transparent").is(":checked")) {
@@ -521,11 +543,16 @@
           " " +
           styles.boxShadowColor +
           ";\n";
-        $(".current-palette .boxShadowColor").removeClass("unavailable");
-        $(".boxShadow-title").removeClass("unavailable");
+        $(".current-palette .boxShadowColor")
+          .removeClass("unavailable")
+          .attr({ onClick: "", "data-original-title": "Box Shadow Color" });
       } else {
-        $(".current-palette .boxShadowColor").addClass("unavailable");
-        $(".boxShadow-title").addClass("unavailable");
+        $(".current-palette .boxShadowColor")
+          .addClass("unavailable")
+          .attr({
+            onClick: "event.stopPropagation(); ",
+            "data-original-title": "unavailable"
+          });
       }
 
       var textShadow = "";
@@ -540,11 +567,16 @@
           " " +
           styles.textShadowColor +
           ";\n";
-        $(".current-palette .textShadowColor").removeClass("unavailable");
-        $(".textShadow-title").removeClass("unavailable");
+        $(".current-palette .textShadowColor")
+          .removeClass("unavailable")
+          .attr({ onClick: "", "data-original-title": "Text Shadow Color" });
       } else {
-        $(".current-palette .textShadowColor").addClass("unavailable");
-        $(".textShadow-title").addClass("unavailable");
+        $(".current-palette .textShadowColor")
+          .addClass("unavailable")
+          .attr({
+            onClick: "event.stopPropagation(); ",
+            "data-original-title": "unavailable"
+          });
       }
 
       if (styles.horizontalText != "") {
@@ -558,77 +590,43 @@
         heightY = "height:" + styles.heightY + ";\n";
       }
 
-      // if (styles.borderRadius) {
-      //   if ($("#radiusTopLeft").is(":checked")) {
-      //     borderRadius1 = "";
-      //     borderRadius1 +=
-      //       "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
-      //     borderRadius1 +=
-      //       "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
-      //     borderRadius1 +=
-      //       "	border-top-left-radius:" + styles.borderRadius + ";\n";
-      //   }
-      //   if ($("#radiusTopRight").is(":checked")) {
-      //     borderRadius2 = "";
-      //     borderRadius2 +=
-      //       "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
-      //     borderRadius2 +=
-      //       "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
-      //     borderRadius2 +=
-      //       "	border-top-right-radius:" + styles.borderRadius + ";\n";
-      //   }
-      //   if ($("#radiusBottomRight").is(":checked")) {
-      //     borderRadius3 = "";
-      //     borderRadius3 +=
-      //       "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
-      //     borderRadius3 +=
-      //       "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
-      //     borderRadius3 +=
-      //       "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
-      //   }
-      //   if ($("#radiusBottomLeft").is(":checked")) {
-      //     borderRadius4 = "";
-      //     borderRadius4 +=
-      //       "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
-      //     borderRadius4 +=
-      //       "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
-      //     borderRadius4 +=
-      //       "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
-      //   }
-      //   borderRadius = "";
-      //   borderRadius =
-      //     borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
-      // }
       if (styles.borderRadius) {
-        borderRadius1 = "";
-        borderRadius1 +=
-          "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
-        borderRadius1 +=
-          "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
-        borderRadius1 +=
-          "	border-top-left-radius:" + styles.borderRadius + ";\n";
-
-        borderRadius2 = "";
-        borderRadius2 +=
-          "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
-        borderRadius2 +=
-          "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
-        borderRadius2 +=
-          "	border-top-right-radius:" + styles.borderRadius + ";\n";
-        borderRadius3 = "";
-        borderRadius3 +=
-          "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
-        borderRadius3 +=
-          "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
-        borderRadius3 +=
-          "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
-        borderRadius4 = "";
-        borderRadius4 +=
-          "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
-        borderRadius4 +=
-          "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
-        borderRadius4 +=
-          "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
+        if ($("#radiusTopLeft").is(":checked")) {
+          borderRadius1 = "";
+          borderRadius1 +=
+            "	-webkit-border-top-left-radius:" + styles.borderRadius + ";\n";
+          borderRadius1 +=
+            "	-moz-border-radius-topleft:" + styles.borderRadius + ";\n";
+          borderRadius1 +=
+            "	border-top-left-radius:" + styles.borderRadius + ";\n";
+        }
+        if ($("#radiusTopRight").is(":checked")) {
+          borderRadius2 = "";
+          borderRadius2 +=
+            "	-webkit-border-top-right-radius:" + styles.borderRadius + ";\n";
+          borderRadius2 +=
+            "	-moz-border-radius-topright:" + styles.borderRadius + ";\n";
+          borderRadius2 +=
+            "	border-top-right-radius:" + styles.borderRadius + ";\n";
+        }
+        if ($("#radiusBottomRight").is(":checked")) {
+          borderRadius3 = "";
+          borderRadius3 +=
+            "	-webkit-border-bottom-right-radius:" + styles.borderRadius + ";\n";
+          borderRadius3 +=
+            "	-moz-border-radius-bottomright:" + styles.borderRadius + ";\n";
+          borderRadius3 +=
+            "	border-bottom-right-radius:" + styles.borderRadius + ";\n";
+        }
+        if ($("#radiusBottomLeft").is(":checked")) {
+          borderRadius4 = "";
+          borderRadius4 +=
+            "	-webkit-border-bottom-left-radius:" + styles.borderRadius + ";\n";
+          borderRadius4 +=
+            "	-moz-border-radius-bottomleft:" + styles.borderRadius + ";\n";
+          borderRadius4 +=
+            "	border-bottom-left-radius:" + styles.borderRadius + ";\n";
+        }
         borderRadius = "";
         borderRadius =
           borderRadius1 + borderRadius2 + borderRadius3 + borderRadius4;
@@ -1369,5 +1367,99 @@
         cssbuttongenerator.setStyles();
       }
     });
+
+    function setFirstBtn() {
+      var styles = cssbuttongenerator.styles;
+      // background solid
+      // $("#solid").attr("checked", true);
+      // $("#transparent").attr("checked", false);
+
+      // box shadow
+      styles.boxShadowOffsetX = "0px";
+      $("#boxShadowOffsetX").val(styles.boxShadowOffsetX);
+      $("#option-boxShadowOffsetX").slider(
+        "value",
+        +styles.boxShadowOffsetX.slice(0, -2)
+      );
+      styles.boxShadowOffsetY = "10px";
+      $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
+      $("#option-boxShadowOffsetY").slider(
+        "value",
+        +styles.boxShadowOffsetY.slice(0, -2)
+      );
+      styles.boxShadowBlurRadius = "14px";
+      $("#boxShadowBlurRadius").val(styles.boxShadowBlurRadius);
+      $("#option-boxShadowBlurRadius").slider(
+        "value",
+        +styles.boxShadowBlurRadius.slice(0, -2)
+      );
+      styles.boxShadowSpreadRadius = "-7px";
+      $("#boxShadowSpreadRadius").val(styles.boxShadowSpreadRadius);
+      $("#option-boxShadowSpreadRadius").slider(
+        "value",
+        +styles.boxShadowSpreadRadius.slice(0, -2)
+      );
+      styles.boxShadowInset = "";
+      $("#boxShadowInset").attr("checked", false);
+      // inset shadow
+      // styles.boxShadowInset = "inset";
+      // $("#boxShadowInset").attr("checked", true);
+
+      // text-shadow
+      styles.textShadowOffsetX = "0px";
+      $("#extShadowOffsetX").val(styles.textShadowOffsetX);
+      $("#option-extShadowOffsetX").slider(
+        "value",
+        +styles.textShadowOffsetX.slice(0, -2)
+      );
+      styles.textShadowOffsetY = "1px";
+      $("#textShadowOffsetY").val(styles.textShadowOffsetY);
+      $("#option-textShadowOffsetY").slider(
+        "value",
+        +styles.textShadowOffsetY.slice(0, -2)
+      );
+      styles.textShadowBlurRadius = "0px";
+      $("#textShadowBlurRadius").val(styles.textShadowBlurRadius);
+      $("#option-textShadowBlurRadius").slider(
+        "value",
+        +styles.textShadowBlurRadius.slice(0, -2)
+      );
+
+      // background greadiant
+      $("#solid").attr("checked", false);
+
+      // border-radius
+      styles.borderRadius = "8px";
+      $("#borderRadius").val(styles.borderRadius);
+      $("#setting-borderRadius").slider(
+        "value",
+        +styles.borderRadius.slice(0, -2)
+      );
+
+      //border-size
+      styles.borderSize = "0px";
+      $("#borderSize").val(styles.borderSize);
+      $("#setting-borderSize").slider("value", +styles.borderSize.slice(0, -2));
+
+      // font-size
+      styles.fontSize = "20px";
+      $("#fontSize").val(styles.fontSize);
+      $("#setting-fontSize").slider("value", +styles.fontSize.slice(0, -2));
+
+      // width
+      styles.widthX = "150px";
+      $("#setting-widthX").slider("value", +styles.widthX.slice(0, -2));
+      $("#widthX").val(styles.widthX);
+
+      // height
+      styles.heightY = "50px";
+      $("#setting-heightY").slider("value", +styles.heightY.slice(0, -2));
+      $("#heightY").val(styles.heightY);
+
+      $("#palette2").trigger("click");
+      cssbuttongenerator.setStyles();
+    }
+
+    setFirstBtn();
   });
 })();

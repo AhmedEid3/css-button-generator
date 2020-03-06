@@ -221,6 +221,10 @@ body .ui-slider .ui-slider-handle {
   cursor: default;
 }
 
+.classname {
+  cursor: pointer;
+}
+
 .h2 {
   margin-bottom: 20px;
 }
@@ -228,6 +232,12 @@ body .ui-slider .ui-slider-handle {
   .h2 {
     font-size: 1.5rem;
   }
+}
+
+.unavailable {
+  border-color: red !important;
+  background-color: #FFF !important;
+  cursor: not-allowed !important;
 }
 
 .trigger-btns-template {
@@ -260,6 +270,7 @@ body .ui-slider .ui-slider-handle {
   bottom: 0;
   left: 0;
   width: 300px;
+  max-width: 500px;
   overflow-x: hidden;
   overflow-y: scroll;
   position: absolute;
@@ -339,6 +350,7 @@ body .ui-slider .ui-slider-handle {
 }
 .main-section .step-two-three textarea.form-control {
   height: 220px;
+  min-height: calc(100vh - 525px);
   background-color: #fcfcfc;
   color: #444;
   font-size: 13px;
@@ -408,6 +420,7 @@ body .ui-slider .ui-slider-handle {
 }
 .settings .setup-one h5 {
   font-weight: bold;
+  margin-top: 10px;
 }
 .settings .setup-one .setting-title {
   border-radius: 6px;
