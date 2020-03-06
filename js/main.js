@@ -40,12 +40,12 @@ $j(document).ready(function() {
       $j(".btns-template").css({ transform: "translate(-100%)" });
     }
   });
+});
 
-  // spinner loading
-  $j(window).on("load", function() {
-    // Spinner Loading
-    $j(".spinner-loading").fadeOut(function() {
-      $j(this).remove();
-    });
+// spinner loading
+$j(window).on("load", function() {
+  // Spinner Loading
+  $j(".spinner-loading").fadeOut(function() {
+    $j(this).remove();
   });
 });
