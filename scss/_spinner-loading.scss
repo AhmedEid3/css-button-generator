@@ -11,24 +11,14 @@
   @extend %position;
   background-color: rgba(white, 0.7);
 
-  svg {
+  img {
     @extend %position;
-    width: 52px;
-    height: 52px;
+    width: 150px;
+    height: 150px;
     margin: auto;
-    animation: rotate 1s linear infinite;
     @media (max-width: 575.98px) {
-      width: 39px;
-      height: 39px;
+      width: 75px;
+      height: 75px;
     }
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
