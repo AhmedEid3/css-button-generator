@@ -44,8 +44,8 @@ $j(document).ready(function() {
   // spinner loading
   $j(window).on("load", function() {
     // Spinner Loading
-    $(".spinner-loading").fadeOut(function() {
-      $(this).remove();
+    $j(".spinner-loading").fadeOut(function() {
+      $j(this).remove();
     });
   });
 });
