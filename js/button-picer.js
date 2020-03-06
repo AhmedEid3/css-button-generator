@@ -1368,68 +1368,40 @@
       }
     });
 
-    function setFirstBtn() {
+    // Generate template buttons
+    $(".btn-style-template").click(function() {
       var styles = cssbuttongenerator.styles;
-      // background solid
-      // $("#solid").attr("checked", true);
-      // $("#transparent").attr("checked", false);
-
-      // box shadow
-      styles.boxShadowOffsetX = "0px";
-      $("#boxShadowOffsetX").val(styles.boxShadowOffsetX);
-      $("#option-boxShadowOffsetX").slider(
-        "value",
-        +styles.boxShadowOffsetX.slice(0, -2)
-      );
-      styles.boxShadowOffsetY = "10px";
-      $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
-      $("#option-boxShadowOffsetY").slider(
-        "value",
-        +styles.boxShadowOffsetY.slice(0, -2)
-      );
-      styles.boxShadowBlurRadius = "14px";
-      $("#boxShadowBlurRadius").val(styles.boxShadowBlurRadius);
-      $("#option-boxShadowBlurRadius").slider(
-        "value",
-        +styles.boxShadowBlurRadius.slice(0, -2)
-      );
-      styles.boxShadowSpreadRadius = "-7px";
-      $("#boxShadowSpreadRadius").val(styles.boxShadowSpreadRadius);
-      $("#option-boxShadowSpreadRadius").slider(
-        "value",
-        +styles.boxShadowSpreadRadius.slice(0, -2)
-      );
-      styles.boxShadowInset = "";
-      $("#boxShadowInset").attr("checked", false);
-      // inset shadow
-      // styles.boxShadowInset = "inset";
-      // $("#boxShadowInset").attr("checked", true);
-
-      // text-shadow
-      styles.textShadowOffsetX = "0px";
-      $("#extShadowOffsetX").val(styles.textShadowOffsetX);
-      $("#option-extShadowOffsetX").slider(
-        "value",
-        +styles.textShadowOffsetX.slice(0, -2)
-      );
-      styles.textShadowOffsetY = "1px";
-      $("#textShadowOffsetY").val(styles.textShadowOffsetY);
-      $("#option-textShadowOffsetY").slider(
-        "value",
-        +styles.textShadowOffsetY.slice(0, -2)
-      );
-      styles.textShadowBlurRadius = "0px";
-      $("#textShadowBlurRadius").val(styles.textShadowBlurRadius);
-      $("#option-textShadowBlurRadius").slider(
-        "value",
-        +styles.textShadowBlurRadius.slice(0, -2)
-      );
+      var numberOfClass = $(this)
+        .attr("class")
+        .split(" ")[1]
+        .split("-")[2];
 
       // background greadiant
-      $("#solid").attr("checked", false);
+      if ($(this).css("background-image") != "none") {
+        $("#solid").attr("checked", false);
+      } else {
+        // background solid
+        $("#solid").attr("checked", true);
+        $("#transparent").attr("checked", false);
+      }
+
+      // font-size
+      styles.fontSize = $(this).css("font-size") || "14px";
+      $("#fontSize").val(styles.fontSize);
+      $("#setting-fontSize").slider("value", +styles.fontSize.slice(0, -2));
+
+      // Size
+      // width
+      styles.widthX = "150px";
+      $("#setting-widthX").slider("value", +styles.widthX.slice(0, -2));
+      $("#widthX").val(styles.widthX);
+      // height
+      styles.heightY = "50px";
+      $("#setting-heightY").slider("value", +styles.heightY.slice(0, -2));
+      $("#heightY").val(styles.heightY);
 
       // border-radius
-      styles.borderRadius = "8px";
+      styles.borderRadius = $(this).css("border-radius") || "5px";
       $("#borderRadius").val(styles.borderRadius);
       $("#setting-borderRadius").slider(
         "value",
@@ -1437,29 +1409,101 @@
       );
 
       //border-size
-      styles.borderSize = "0px";
+      styles.borderSize = $(this).css("border-width") || "0px";
       $("#borderSize").val(styles.borderSize);
       $("#setting-borderSize").slider("value", +styles.borderSize.slice(0, -2));
 
-      // font-size
-      styles.fontSize = "20px";
-      $("#fontSize").val(styles.fontSize);
-      $("#setting-fontSize").slider("value", +styles.fontSize.slice(0, -2));
+      // box shadow
+      // console.log($(this).css("box-shadow"));
+      //rgb(181, 75, 58) 0px 34px 0px -15px inset
+      if ($(this).css("box-shadow") != "none") {
+        var boxshadow = $(this)
+          .css("boxShadow")
+          .match(/(-?\d+px)|(rgb\(.+\))|inset/g);
 
-      // width
-      styles.widthX = "150px";
-      $("#setting-widthX").slider("value", +styles.widthX.slice(0, -2));
-      $("#widthX").val(styles.widthX);
+        var boxshadowX = boxshadow[1];
+        var boxshadowY = boxshadow[2];
+        var boxshadowBlur = boxshadow[3];
+        var boxshadowSpread = boxshadow[4];
+        var boxshadowInset = "";
+        if (boxshadow.length == 6) boxshadowInset = boxshadow[5];
 
-      // height
-      styles.heightY = "50px";
-      $("#setting-heightY").slider("value", +styles.heightY.slice(0, -2));
-      $("#heightY").val(styles.heightY);
+        $("#boxShadow-check").attr("checked", true);
+        $(".box-shadow, .title-checkbox").show();
+        styles.boxShadowOffsetX = boxshadowX || "0px";
+        $("#boxShadowOffsetX").val(styles.boxShadowOffsetX);
+        $("#option-boxShadowOffsetX").slider(
+          "value",
+          +styles.boxShadowOffsetX.slice(0, -2)
+        );
+        styles.boxShadowOffsetY = boxshadowY || "0px";
+        $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
+        $("#option-boxShadowOffsetY").slider(
+          "value",
+          +styles.boxShadowOffsetY.slice(0, -2)
+        );
+        styles.boxShadowBlurRadius = boxshadowBlur || "0px";
+        $("#boxShadowBlurRadius").val(styles.boxShadowBlurRadius);
+        $("#option-boxShadowBlurRadius").slider(
+          "value",
+          +styles.boxShadowBlurRadius.slice(0, -2)
+        );
+        styles.boxShadowSpreadRadius = boxshadowSpread || "0px";
+        $("#boxShadowSpreadRadius").val(styles.boxShadowSpreadRadius);
+        $("#option-boxShadowSpreadRadius").slider(
+          "value",
+          +styles.boxShadowSpreadRadius.slice(0, -2)
+        );
+        // inset shadow
+        styles.boxShadowInset = boxshadowInset;
+        if (!boxshadowInset) {
+          $("#boxShadowInset").attr("checked", false);
+        } else {
+          $("#boxShadowInset").attr("checked", true);
+        }
+      } else {
+        $(".box-shadow, .title-checkbox").hide();
+        $("#boxShadow-check").attr("checked", false);
+        $("#boxShadowInset").attr("checked", false);
+      }
 
-      $("#palette2").trigger("click");
+      // text-shadow
+      // rgb(43, 102, 94) 0px -1px 0px
+      if ($(this).css("text-shadow") != "none") {
+        var textshadow = $(this)
+          .css("text-shadow")
+          .match(/(-?\d+px)|(rgb\(.+\))/g);
+
+        var boxshadowX = textshadow[1];
+        var boxshadowY = textshadow[2];
+        var boxshadowBlur = textshadow[3];
+        $(".text-shadow").show();
+        $("#textShadow-check").attr("checked", true);
+        styles.textShadowOffsetX = boxshadowX || "0px";
+        $("#extShadowOffsetX").val(styles.textShadowOffsetX);
+        $("#option-extShadowOffsetX").slider(
+          "value",
+          +styles.textShadowOffsetX.slice(0, -2)
+        );
+        styles.textShadowOffsetY = boxshadowY || "0px";
+        $("#textShadowOffsetY").val(styles.textShadowOffsetY);
+        $("#option-textShadowOffsetY").slider(
+          "value",
+          +styles.textShadowOffsetY.slice(0, -2)
+        );
+        styles.textShadowBlurRadius = boxshadowBlur || "0px";
+        $("#textShadowBlurRadius").val(styles.textShadowBlurRadius);
+        $("#option-textShadowBlurRadius").slider(
+          "value",
+          +styles.textShadowBlurRadius.slice(0, -2)
+        );
+      } else {
+        $(".text-shadow").hide();
+        $("#textShadow-check").attr("checked", false);
+      }
+
+      $("#palette" + numberOfClass).trigger("click");
       cssbuttongenerator.setStyles();
-    }
-
-    setFirstBtn();
+    });
   });
 })();
