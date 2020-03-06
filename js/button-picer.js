@@ -1605,5 +1605,16 @@
       $("#palette" + numberOfClass).trigger("click");
       cssbuttongenerator.setStyles();
     });
+
+    $(".preview-btn-template").click(function() {
+      var numberOfClass = $(this)
+        .attr("class")
+        .split(" ")[1]
+        .split("-")[2];
+
+      var color = $(".bg-style-" + numberOfClass).css("background-color");
+      $(".preview-swatch-color").css("background", color);
+      $(".preview-area").css("background", color);
+    });
   });
 })();
