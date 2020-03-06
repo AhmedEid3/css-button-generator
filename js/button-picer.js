@@ -56,192 +56,192 @@
   ); // Green
   pArray = pSwatches(
     pArray,
-    "#79bbff",
-    "#378de5",
+    "#768d87",
+    "#6c7c7c",
     "#ffffff",
-    "#84bbf3",
-    "#bbdaf7",
+    "#566963",
+    "#2b665e",
     "#528ecc"
   ); // Blue
   pArray = pSwatches(
     pArray,
-    "#ffc477",
-    "#fb9e25",
+    "#77b55a",
+    "#72b352",
     "#ffffff",
-    "#eeb44f",
-    "#fce2c1",
-    "#cc9f52"
+    "#4b8f29",
+    "#3e7327",
+    "#5b8a3c"
   ); // Orange
   pArray = pSwatches(
     pArray,
-    "#c123de",
-    "#a20dbd",
+    "#e4685d",
+    "#eb675e",
     "#ffffff",
-    "#a511c0",
-    "#e184f3",
-    "#9b14b3"
+    "#ffffff",
+    "#e67a73",
+    "#b23e35"
   ); // Purple
   pArray = pSwatches(
     pArray,
-    "#c579ff",
-    "#a341ee",
+    "#a73f2d",
+    "#b34332",
     "#ffffff",
-    "#a946f5",
-    "#e6cafc",
-    "#8628ce"
+    "#241d13",
+    "#b54b3a",
+    "#7a2a1d"
   ); // Purple
   pArray = pSwatches(
     pArray,
-    "#f0c911",
-    "#f2ab1e",
-    "#c92200",
-    "#e65f44",
-    "#f9eca0",
-    "#ded17c"
+    "#2dabf9",
+    "#0688fa",
+    "#ffffff",
+    "#0b0e07",
+    "#29bbff",
+    "#263666"
   ); // Orange
   pArray = pSwatches(
     pArray,
-    "#9dce2c",
-    "#8cb82b",
+    "#2e466e",
+    "#415989",
     "#ffffff",
-    "#83c41a",
-    "#c1ed9c",
-    "#689324"
+    "#1f2f47",
+    "#23395e",
+    "#263666"
   ); // Green
   pArray = pSwatches(
     pArray,
-    "#f24537",
-    "#c62d1f",
+    "#d0451b",
+    "#bc3315",
     "#ffffff",
-    "#d02718",
-    "#f5978e",
-    "#810E05"
+    "#942911",
+    "#cf866c",
+    "#854629"
   ); // Red
   pArray = pSwatches(
     pArray,
-    "#fae4bd",
-    "#eac380",
-    "#ffffff",
-    "#eeb44f",
-    "#fcf8f2",
-    "#cc9f52"
-  ); // Orange
-  pArray = pSwatches(
-    pArray,
-    "#ff5bb0",
-    "#ef027d",
-    "#ffffff",
-    "#ee1eb5",
-    "#fbafe3",
-    "#c70067"
-  ); // Pink
-  pArray = pSwatches(
-    pArray,
-    "#79bbff",
-    "#4197ee",
-    "#ffffff",
-    "#469df5",
-    "#cae3fc",
-    "#287ace"
-  ); // Blue
-  pArray = pSwatches(
-    pArray,
-    "#f9f9f9",
-    "#e9e9e9",
-    "#666666",
-    "#dcdcdc",
-    "#ffffff",
+    "#eae0c2",
+    "#ccc2a6",
+    "#505739",
+    "#333029",
+    "#1c1b18",
     "#ffffff"
-  ); // Grey
-  pArray = pSwatches(
-    pArray,
-    "#f6b33d",
-    "#d29105",
-    "#ffffff",
-    "#eda933",
-    "#fed897",
-    "#cd8a15"
   ); // Orange
   pArray = pSwatches(
     pArray,
-    "#b8e356",
-    "#a5cc52",
+    "#7d5d3b",
+    "#634b30",
     "#ffffff",
-    "#83c41a",
-    "#d9fbbe",
-    "#86ae47"
-  ); // Green
-  pArray = pSwatches(
-    pArray,
-    "#3d94f6",
-    "#1e62d0",
-    "#ffffff",
-    "#337fed",
-    "#97c4fe",
-    "#1570cd"
-  ); // Blue
-  pArray = pSwatches(
-    pArray,
-    "#a53df6",
-    "#7c16cb",
-    "#ffffff",
-    "#9c33ed",
-    "#d197fe",
-    "#7d15cd"
-  ); // Purple
-  pArray = pSwatches(
-    pArray,
-    "#ffce79",
-    "#eeaf41",
-    "#ffffff",
-    "#eeb44f",
-    "#fceaca",
-    "#ce8e28"
-  ); // Orange
-  pArray = pSwatches(
-    pArray,
-    "#eea1fc",
-    "#d441ee",
-    "#ffffff",
-    "#dd5df4",
-    "#f4cafc",
-    "#b63dcc"
+    "#54381e",
+    "#a6827e",
+    "#4d3534"
   ); // Pink
   pArray = pSwatches(
     pArray,
-    "#63b8ee",
-    "#468ccf",
-    "#14396a",
-    "#3866a3",
-    "#bee2f9",
-    "#7cacde"
+    "#007dc1",
+    "#0061a7",
+    "#ffffff",
+    "#124d77",
+    "#54a3f7",
+    "#154682"
   ); // Blue
+  pArray = pSwatches(
+    pArray,
+    "#33bdef",
+    "#019ad2",
+    "#ffffff",
+    "#057fd0",
+    "#f0f7fa",
+    "#5b6178"
+  ); // Grey
   pArray = pSwatches(
     pArray,
     "#ffec64",
     "#ffab23",
-    "#333333",
+    "#ffec64",
     "#ffaa22",
     "#fff6af",
     "#ffee66"
   ); // Orange
   pArray = pSwatches(
     pArray,
-    "#fa665a",
-    "#d34639",
+    "#74ad5a",
+    "#68a54b",
     "#ffffff",
-    "#d83526",
-    "#fab3ad",
-    "#98231a"
+    "#3b6e22",
+    "#9acc85",
+    ""
+  ); // Green
+  pArray = pSwatches(
+    pArray,
+    "#637aad",
+    "#5972a7",
+    "#ffffff",
+    "#314179",
+    "#7a8eb9",
+    ""
+  ); // Blue
+  pArray = pSwatches(
+    pArray,
+    "#ededed",
+    "#bab1ba",
+    "#3a8a9e",
+    "#d6bcd6",
+    "#899599",
+    "#e1e2ed"
+  ); // Purple
+  pArray = pSwatches(
+    pArray,
+    "#c62d1f",
+    "#f24437",
+    "#ffffff",
+    "#d02718",
+    "#8a2a21",
+    "#810e05"
+  ); // Orange
+  pArray = pSwatches(
+    pArray,
+    "#79bbff",
+    "#378de5",
+    "#ffffff",
+    "#337bc4",
+    "#1564ad",
+    "#528ecc"
+  ); // Pink
+  pArray = pSwatches(
+    pArray,
+    "#dbe6c4",
+    "#9ba892",
+    "#757d6f",
+    "#b2b8ad",
+    "#f2fadc",
+    "#ced9bf"
+  ); // Blue
+  pArray = pSwatches(
+    pArray,
+    "#dfbdfa",
+    "#bc80ea",
+    "#ffffff",
+    "#c584f3",
+    "#efdcfb",
+    "#9752cc"
+  ); // Orange
+  pArray = pSwatches(
+    pArray,
+    "#bddbfa",
+    "#80b5ea",
+    "#ffffff",
+    "#84bbf3",
+    "#dcecfb",
+    "#528ecc"
   ); // Red
   pArray = pSwatches(
     pArray,
-    "#f1bdfa",
-    "#da80ea",
     "#ffffff",
-    "#e284f3",
-    "#f6dcfb",
-    "#b952cc"
+    "#f6f6f6",
+    "#666666",
+    "#dcdcdc",
+    "#ffffff",
+    "#ffffff"
   ); // Pink
   pArray = pSwatches(
     pArray,
@@ -254,13 +254,22 @@
   ); // Red
   pArray = pSwatches(
     pArray,
-    "#ffffff",
-    "#f6f6f6",
-    "#666666",
-    "#dcdcdc",
-    "#ffffff",
-    "#ffffff"
+    "#63b8ee",
+    "#468ccf",
+    "#14396a",
+    "#3866a3",
+    "#bee2f9",
+    "#7cacde"
   ); // Grey
+  pArray = pSwatches(
+    pArray,
+    "#ffec64",
+    "#ffab23",
+    "#333333",
+    "#ffaa22",
+    "#fff6af",
+    "#ffee66"
+  ); // Green
   pArray = pSwatches(
     pArray,
     "#89c403",
@@ -269,33 +278,124 @@
     "#74b807",
     "#a4e271",
     "#528009"
-  ); // Green
-  pArray = pSwatches(
-    pArray,
-    "#bddbfa",
-    "#80b5ea",
-    "#ffffff",
-    "#84bbf3",
-    "#dcecfb",
-    "#528ecc"
   ); // Blue
   pArray = pSwatches(
     pArray,
-    "#dfbdfa",
-    "#bc80ea",
+    "#f9f9f9",
+    "#e9e9e9",
+    "#666666",
+    "#dcdcdc",
     "#ffffff",
-    "#c584f3",
-    "#efdcfb",
-    "#9752cc"
+    "#ffffff"
   ); // Purple
   pArray = pSwatches(
     pArray,
-    "#da3df6",
-    "#b51ed0",
+    "#c123de",
+    "#a20dbd",
     "#ffffff",
-    "#d133ed",
-    "#ee97fe",
-    "#b115cd"
+    "#a511c0",
+    "#e184f3",
+    "#9b14b3"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#3d94f6",
+    "#1e62d0",
+    "#ffffff",
+    "#337fed",
+    "#97c4fe",
+    "#1570cd"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#ff5bb0",
+    "#ef027d",
+    "#ffffff",
+    "#ee1eb5",
+    "#fbafe3",
+    "#c70067"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#f0c911",
+    "#f2ab1e",
+    "#c92200",
+    "#e65f44",
+    "#f9eca0",
+    "#ded17c"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#f24537",
+    "#c62d1f",
+    "#ffffff",
+    "#d02718",
+    "#f5978e",
+    "#810e05"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#b8e356",
+    "#a5cc52",
+    "#ffffff",
+    "#83c41a",
+    "#d9fbbe",
+    "#86ae47"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#ffc477",
+    "#fb9e25",
+    "#ffffff",
+    "#eeb44f",
+    "#fce2c1",
+    "#cc9f52"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#ededed",
+    "#dfdfdf",
+    "#777777",
+    "#dcdcdc",
+    "#ffffff",
+    "#ffffff"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#79bbff",
+    "#378de5",
+    "#ffffff",
+    "#84bbf3",
+    "#bbdaf7",
+    "#528ecc"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#77d42a",
+    "#5cb811",
+    "#306108",
+    "#268a16",
+    "#caefab",
+    "#aade7c"
+  ); // Pink
+
+  pArray = pSwatches(
+    pArray,
+    "#fe1a00",
+    "#ce0100",
+    "#ffffff",
+    "#d83526",
+    "#f29c93",
+    "#b23e35"
   ); // Pink
 
   function _rgb2hex(rgb_string, r, g, b) {
