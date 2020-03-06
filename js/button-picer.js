@@ -157,7 +157,7 @@
     pArray,
     "#ffec64",
     "#ffab23",
-    "#ffec64",
+    "#333333",
     "#ffaa22",
     "#fff6af",
     "#ffee66"
@@ -1492,7 +1492,7 @@
 
       // Size
       // width
-      styles.widthX = "150px";
+      styles.widthX = "140px";
       $("#setting-widthX").slider("value", +styles.widthX.slice(0, -2));
       $("#widthX").val(styles.widthX);
       // height
