@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
   <link href="css/colorpicker.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/btns-templates.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
   <!-- End style -->
   <output style="display:none">
     <replace></replace>
@@ -427,10 +426,6 @@
   <!--End buttons template-->
 
   <div class="container">
-    <!-- <h1 class="h2 text-center">
-Welcome to the css3 button generator, have fun!
-</h1> -->
-
     <div class="row no-gutters">
       <div class="col-lg-2"></div>
       <div class="col-md-7 col-lg-6 order-1 order-md-0">
@@ -533,10 +528,6 @@ Welcome to the css3 button generator, have fun!
         <div class="settings">
           <!-- Start setup-one -->
           <div class="setup-one">
-            <!--          <h5>-->
-            <!--            STEP 1 :-->
-            <!--            <small class="text-dark">Change the parameters of your button.</small>-->
-            <!--          </h5>-->
             <button class="trigger-btns-template btn btn-info btn-sm">Open Template Buttons</button>
             <!-- Start settings-text -->
             <div class="settings-text">
@@ -572,9 +563,6 @@ Welcome to the css3 button generator, have fun!
                 <div class="col-6">
                   <div class="setting-container refresh-add">
                     <div class="row no-gutters align-items-end">
-                      <!--                    <div class="col-auto">-->
-                      <!--                      <div class="refresh" id="refresh-fontSize"></div>-->
-                      <!--                    </div>-->
                       <div class="col">
                         <label for="fontSize">Font Size:</label>
                         <input type="text" id="fontSize" class="setting-input" readonly="readonly" />
@@ -603,129 +591,6 @@ Welcome to the css3 button generator, have fun!
 
                 </div>
 
-                <!--              <div class="row align-items-center">-->
-                <!--                <div class="col-6">-->
-                <!--                  <div class="form-group">-->
-                <!--                    <label for="buttonValue">Button Text:</label>-->
-                <!--                    <input type="text" class="form-control" id="buttonValue" value="TEXT" />-->
-                <!--                  </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-6">-->
-                <!--                  <div class="form-group">-->
-                <!--                    <label for="buttonValue">CSS Class Name:</label>-->
-                <!--                    <input type="text" class="form-control" id="classValue" value="classname" />-->
-                <!--                  </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="col-6">-->
-                <!--                  <div class="form-group">-->
-                <!--                    <label for="colorStyles">Color Styles:</label>-->
-                <!--                    <select id="colorStyles">-->
-                <!--                      <option disabled="disabled" value="" selected="selected">&#45;&#45;Select&#45;&#45;</option>-->
-                <!--                      <option value="palette0">palette0</option>-->
-                <!--                      <option value="palette1">palette1</option>-->
-                <!--                      <option value="palette2">palette2</option>-->
-                <!--                      <option value="palette3">palette3</option>-->
-                <!--                      <option value="palette4">palette4</option>-->
-                <!--                      <option value="palette5">palette5</option>-->
-                <!--                      <option value="palette6">palette6</option>-->
-                <!--                      <option value="palette7">palette7</option>-->
-                <!--                      <option value="palette8">palette8</option>-->
-                <!--                      <option value="palette9">palette9</option>-->
-                <!--                      <option value="palette10">palette10</option>-->
-                <!--                      <option value="palette11">palette11</option>-->
-                <!--                      <option value="palette12">palette12</option>-->
-                <!--                      <option value="palette13">palette13</option>-->
-                <!--                      <option value="palette14">palette14</option>-->
-                <!--                      <option value="palette15">palette15</option>-->
-                <!--                      <option value="palette16">palette16</option>-->
-                <!--                      <option value="palette17">palette17</option>-->
-                <!--                      <option value="palette18">palette18</option>-->
-                <!--                      <option value="palette19">palette19</option>-->
-                <!--                      <option value="palette20">palette20</option>-->
-                <!--                    </select>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-6">-->
-                <!--                  <div class="form-group">-->
-                <!--                    <label for="buttonStyle">Button Style:</label>-->
-                <!--                    <select id="buttonStyle">-->
-                <!--                      <option disabled="disabled" value="" selected="selected">&#45;&#45;Select&#45;&#45;</option>-->
-                <!--                      <option value="1">style-1</option>-->
-                <!--                      <option value="2">style-2</option>-->
-                <!--                      <option value="3">style-3</option>-->
-                <!--                      <option value="4">style-4</option>-->
-                <!--                      <option value="5">style-5</option>-->
-                <!--                    </select>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-6">-->
-                <!--                  <div class="form-group">-->
-                <!--                    <label for="fontFamily">Font Family:</label>-->
-                <!--                    <select id="fontFamily">-->
-                <!--                      <option value="Arial">Arial</option>-->
-                <!--                      <option value="Arial Black">Arial Black</option>-->
-                <!--                      <option value="Comic Sans MS">Comic Sans MS</option>-->
-                <!--                      <option value="Courier New">Courier New</option>-->
-                <!--                      <option value="Georgia">Georgia</option>-->
-                <!--                      <option value="Impact">Impact</option>-->
-                <!--                      <option value="Times New Roman">Times New Roman</option>-->
-                <!--                      <option value="Trebuchet MS">Trebuchet MS</option>-->
-                <!--                      <option value="Verdana">Verdana</option>-->
-                <!--                    </select>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-6 mb-n3">-->
-                <!--                  <div class="row no-gutters">-->
-                <!--                    <div class="col-auto">-->
-                <!--                      <div class="form-check">-->
-                <!--                        <input class="form-check-input" type="checkbox" id="fontWeight" checked />-->
-                <!--                        <label class="form-check-label" for="fontWeight">-->
-                <!--                          Bold-->
-                <!--                        </label>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                    <div class="col-auto">-->
-                <!--                      <div class="form-check">-->
-                <!--                        <input class="form-check-input" type="checkbox" id="fontStyle" />-->
-                <!--                        <label class="form-check-label" for="fontStyle">-->
-                <!--                          <em>Italic</em>-->
-                <!--                        </label>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-lg-5 col-xl-6">-->
-                <!--                  <div class="setting-container refresh-add">-->
-                <!--                    <div class="row no-gutters align-items-end">-->
-                <!--                      <div class="col-auto">-->
-                <!--                        <div class="refresh" id="refresh-fontSize"></div>-->
-                <!--                      </div>-->
-                <!--                      <div class="col">-->
-                <!--                        <label for="fontSize">Font Size:</label>-->
-                <!--                        <input type="text" id="fontSize" class="setting-input" readonly="readonly" />-->
-                <!--                        <div id="setting-fontSize" class="setting-slider"></div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-
-                <!--                <div class="col-lg-7 col-xl-6">-->
-                <!--                  <div class="setting-container refresh-add">-->
-                <!--                    <div class="row no-gutters align-items-end">-->
-                <!--                      <div class="col-auto">-->
-                <!--                        <div class="refresh" id="refresh-horizontalText"></div>-->
-                <!--                      </div>-->
-                <!--                      <div class="col">-->
-                <!--                        <label for="horizontalText">Horizontal Text Alignement:</label>-->
-                <!--                        <input type="text" id="horizontalText" class="setting-input" readonly="readonly" />-->
-                <!--                        <div id="setting-horizontalText" class="setting-slider"></div>-->
-                <!--                      </div>-->
-                <!--                    </div>-->
-                <!--                  </div>-->
-                <!--                </div>-->
-
-                <!--              </div>-->
               </div>
               <!-- End settings-text -->
 
@@ -738,9 +603,7 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-heightY"></div>-->
-                        <!--                    </div>-->
+
                         <div class="col">
                           <label for="heightY">Vertical Size:</label>
                           <input type="text" id="heightY" class="setting-input" readonly="readonly" />
@@ -752,9 +615,7 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-autp">-->
-                        <!--                      <div class="refresh" id="refresh-widthX"></div>-->
-                        <!--                    </div>-->
+
                         <div class="col">
                           <label for="widthX">Horizontal Size:</label>
                           <input type="text" id="widthX" class="setting-input" readonly="readonly" />
@@ -818,9 +679,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container refresh-add border-radius">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-borderRadius"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="borderRadius">Border Radius:</label>
                           <input type="text" id="borderRadius" class="setting-input" readonly="readonly" />
@@ -832,9 +690,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-borderSize"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="borderSize">Border Size:</label>
                           <input type="text" id="borderSize" class="setting-input" readonly="readonly" />
@@ -863,9 +718,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-boxShadowOffsetY"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="boxShadowOffsetY">Vertical Position:</label>
                           <input type="text" id="boxShadowOffsetY" class="setting-input multiple" readonly="readonly" />
@@ -877,9 +729,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-boxShadowOffsetX"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="boxShadowOffsetX">Horizontal Position:</label>
                           <input type="text" id="boxShadowOffsetX" class="setting-input multiple" readonly="readonly" />
@@ -891,9 +740,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-boxShadowBlurRadius"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="boxShadowBlurRadius">Blur Radius:</label>
                           <input type="text" id="boxShadowBlurRadius" class="setting-input multiple-blur"
@@ -906,9 +752,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container box-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-boxShadowSpreadRadius"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="boxShadowSpreadRadius">Spread Radius:</label>
                           <input type="text" id="boxShadowSpreadRadius" class="setting-input multiple"
@@ -932,9 +775,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
                       <div class="row  no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-textShadowOffsetY"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="textShadowOffsetY">Vertical Position:</label>
                           <input type="text" id="textShadowOffsetY" class="setting-input multiple"
@@ -947,9 +787,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-textShadowOffsetX"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="textShadowOffsetX">Horizontal Position:</label>
                           <input type="text" id="textShadowOffsetX" class="setting-input multiple"
@@ -962,9 +799,6 @@ Welcome to the css3 button generator, have fun!
                   <div class="col-lg-6">
                     <div class="setting-container text-shadow refresh-add">
                       <div class="row no-gutters align-items-end">
-                        <!--                    <div class="col-auto">-->
-                        <!--                      <div class="refresh" id="refresh-textShadowBlurRadius"></div>-->
-                        <!--                    </div>-->
                         <div class="col">
                           <label for="textShadowBlurRadius">Blur Radius:</label>
                           <input type="text" id="textShadowBlurRadius" class="setting-input multiple-blur"
@@ -984,6 +818,42 @@ Welcome to the css3 button generator, have fun!
         </div>
       </div>
     </div>
+
+    <!-- Start Spinner Loading-->
+    <div class="spinner-loading">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid">
+        <g transform="translate(50,50)">
+          <circle cx="0" cy="0" r="8.333333333333334" fill="none" stroke="#e15b64" stroke-width="4"
+            stroke-dasharray="26.179938779914945 26.179938779914945" transform="rotate(123.312)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1s"
+              calcMode="spline" keySplines="0.2 0 0.8 1" begin="0" repeatCount="indefinite"></animateTransform>
+          </circle>
+          <circle cx="0" cy="0" r="16.666666666666668" fill="none" stroke="#f47e60" stroke-width="4"
+            stroke-dasharray="52.35987755982989 52.35987755982989" transform="rotate(212.794)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1s"
+              calcMode="spline" keySplines="0.2 0 0.8 1" begin="-0.2" repeatCount="indefinite"></animateTransform>
+          </circle>
+          <circle cx="0" cy="0" r="25" fill="none" stroke="#f8b26a" stroke-width="4"
+            stroke-dasharray="78.53981633974483 78.53981633974483" transform="rotate(298.123)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1s"
+              calcMode="spline" keySplines="0.2 0 0.8 1" begin="-0.4" repeatCount="indefinite"></animateTransform>
+          </circle>
+          <circle cx="0" cy="0" r="33.333333333333336" fill="none" stroke="#abbd81" stroke-width="4"
+            stroke-dasharray="104.71975511965978 104.71975511965978" transform="rotate(358.187)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1s"
+              calcMode="spline" keySplines="0.2 0 0.8 1" begin="-0.6" repeatCount="indefinite"></animateTransform>
+          </circle>
+          <circle cx="0" cy="0" r="41.666666666666664" fill="none" stroke="#849b87" stroke-width="4"
+            stroke-dasharray="130.89969389957471 130.89969389957471" transform="rotate(41.5159)">
+            <animateTransform attributeName="transform" type="rotate" values="0 0 0;360 0 0" times="0;1" dur="1s"
+              calcMode="spline" keySplines="0.2 0 0.8 1" begin="-0.8" repeatCount="indefinite"></animateTransform>
+          </circle>
+        </g>
+      </svg>
+    </div>
+    <!-- End Spinner Loading-->
 
     <!-- Start Scripts -->
     <script src="js/jquery-3.4.1.min.js"></script>
