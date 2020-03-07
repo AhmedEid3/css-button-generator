@@ -451,20 +451,20 @@
       borderColor: pArray[0][3],
       boxShadowColor: pArray[0][4],
       textShadowColor: pArray[0][5],
-      borderRadius: "6px",
+      borderRadius: "28px",
       horizontalText: "0",
       borderSize: "1px",
-      boxShadowBlurRadius: "0px",
-      boxShadowInset: "inset",
-      boxShadowOffsetX: "0px",
-      boxShadowOffsetY: "1px",
-      boxShadowSpreadRadius: "0px",
+      boxShadowBlurRadius: "",
+      boxShadowInset: "",
+      boxShadowOffsetX: "",
+      boxShadowOffsetY: "",
+      boxShadowSpreadRadius: "",
       customClass: "classname",
       fontFamily: "arial",
       fontSize: "15px",
       fontWeight: "bold",
       fontStyle: "normal",
-      widthX: "100px",
+      widthX: "140px",
       heightY: "50px",
       lineHeight: "50px",
       textShadowBlurRadius: "0px",
@@ -1376,12 +1376,35 @@
       }
     });
 
+    // reset btns values
+    var numberStyleBtn = 0;
     $(".refresh").click(function() {
+      var styles = cssbuttongenerator.styles;
+      var self = '.btn-style-'+numberStyleBtn;
+      // box-shadow values
+      var boxshadow = $(self)
+        .css("boxShadow")
+        .match(/(-?\d+px)|(rgb\(.+\))|inset/g);
+      var boxshadowX = boxshadow[1];
+      var boxshadowY = boxshadow[2];
+      var boxshadowBlur = boxshadow[3];
+      var boxshadowSpread = boxshadow[4];
+      // text-shadow
+      var textshadow = $(self)
+        .css("text-shadow")
+        .match(/(-?\d+px)|(rgb\(.+\))/g);
+      var textshadowX = textshadow[1];
+      var textshadowY = textshadow[2];
+      var textshadowBlur = textshadow[3];
+
       if ($(this).attr("id") == "refresh-borderRadius") {
         $(".bordercorner").attr("checked", "checked");
-        cssbuttongenerator.styles.borderRadius = "6px";
-        $("#setting-borderRadius").slider("value", 6);
-        $("#borderRadius").val(cssbuttongenerator.styles.borderRadius);
+        styles.borderRadius = $(self).css("border-radius");
+        $("#borderRadius").val(styles.borderRadius);
+        $("#setting-borderRadius").slider(
+          "value",
+          +styles.borderRadius.slice(0, -2)
+        );
         cssbuttongenerator.setStyles();
       }
       if ($(this).attr("id") == "refresh-horizontalText") {
@@ -1390,79 +1413,102 @@
         $("#horizontalText").val(cssbuttongenerator.styles.horizontalText);
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-fontSize") {
-        cssbuttongenerator.styles.fontSize = "15px";
-        $("#setting-fontSize").slider("value", 15);
-        $("#fontSize").val(cssbuttongenerator.styles.fontSize);
+        styles.fontSize = $(self).css("font-size");
+        $("#fontSize").val(styles.fontSize);
+        $("#setting-fontSize").slider("value", +styles.fontSize.slice(0, -2));
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-borderSize") {
-        cssbuttongenerator.styles.borderSize = "1px";
-        $("#setting-borderSize").slider("value", 1);
-        $("#borderSize").val(cssbuttongenerator.styles.borderSize);
+        styles.borderSize = $(self).css("border-width");
+        $("#borderSize").val(styles.borderSize);
+        $("#setting-borderSize").slider("value", +styles.borderSize.slice(0, -2));
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-heightY") {
-        cssbuttongenerator.styles.heightY = "50px";
-        $("#setting-heightY").slider("value", 50);
-        $("#heightY").val(cssbuttongenerator.styles.heightY);
+        styles.boxShadowOffsetY = boxshadowY;
+        $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
+        $("#option-boxShadowOffsetY").slider(
+          "value",
+          +styles.boxShadowOffsetY.slice(0, -2)
+        );
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-widthX") {
-        cssbuttongenerator.styles.widthX = "100px";
-        $("#setting-widthX").slider("value", 100);
-        $("#widthX").val(cssbuttongenerator.styles.widthX);
+        styles.widthX = "140px";
+        $("#setting-widthX").slider("value", +styles.widthX.slice(0, -2));
+        $("#widthX").val(styles.widthX);
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-boxShadowOffsetY") {
-        cssbuttongenerator.styles.boxShadowOffsetY = "1px";
-        $("#option-boxShadowOffsetY").slider("value", 1);
-        $("#boxShadowOffsetY").val(cssbuttongenerator.styles.boxShadowOffsetY);
+        styles.boxShadowOffsetY = boxshadowY;
+        $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
+        $("#option-boxShadowOffsetY").slider(
+          "value",
+          +styles.boxShadowOffsetY.slice(0, -2)
+        );
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-boxShadowOffsetX") {
-        cssbuttongenerator.styles.boxShadowOffsetX = "0px";
-        $("#option-boxShadowOffsetX").slider("value", 0);
-        $("#boxShadowOffsetX").val(cssbuttongenerator.styles.boxShadowOffsetY);
+        styles.boxShadowOffsetX = boxshadowX;
+        $("#boxShadowOffsetX").val(styles.boxShadowOffsetX);
+        $("#option-boxShadowOffsetX").slider(
+          "value",
+          +styles.boxShadowOffsetX.slice(0, -2)
+        );
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-boxShadowBlurRadius") {
-        cssbuttongenerator.styles.boxShadowBlurRadius = "0px";
-        $("#option-boxShadowBlurRadius").slider("value", 0);
-        $("#boxShadowBlurRadius").val(
-          cssbuttongenerator.styles.boxShadowBlurRadius
+        styles.boxShadowBlurRadius = boxshadowBlur || "0px";
+        $("#boxShadowBlurRadius").val(styles.boxShadowBlurRadius);
+        $("#option-boxShadowBlurRadius").slider(
+          "value",
+          +styles.boxShadowBlurRadius.slice(0, -2)
         );
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-boxShadowSpreadRadius") {
-        cssbuttongenerator.styles.boxShadowSpreadRadius = "0px";
-        $("#option-boxShadowSpreadRadius").slider("value", 0);
-        $("#boxShadowSpreadRadius").val(
-          cssbuttongenerator.styles.boxShadowSpreadRadius
+        styles.boxShadowSpreadRadius = boxshadowSpread;
+        $("#boxShadowSpreadRadius").val(styles.boxShadowSpreadRadius);
+        $("#option-boxShadowSpreadRadius").slider(
+          "value",
+          +styles.boxShadowSpreadRadius.slice(0, -2)
         );
         cssbuttongenerator.setStyles();
       }
+
       if ($(this).attr("id") == "refresh-textShadowOffsetY") {
-        cssbuttongenerator.styles.textShadowOffsetY = "1px";
-        $("#option-textShadowOffsetY").slider("value", 1);
-        $("#textShadowOffsetY").val(
-          cssbuttongenerator.styles.textShadowOffsetY
+        styles.textShadowOffsetY = textshadowY;
+        $("#textShadowOffsetY").val(styles.textShadowOffsetY);
+        $("#option-textShadowOffsetY").slider(
+          "value",
+          +styles.textShadowOffsetY.slice(0, -2)
         );
         cssbuttongenerator.setStyles();
       }
       if ($(this).attr("id") == "refresh-textShadowOffsetX") {
-        cssbuttongenerator.styles.textShadowOffsetX = "1px";
-        $("#option-textShadowOffsetX").slider("value", 1);
-        $("#textShadowOffsetX").val(
-          cssbuttongenerator.styles.textShadowOffsetX
+        styles.textShadowOffsetX = textshadowX;
+        $("#extShadowOffsetX").val(styles.textShadowOffsetX);
+        $("#option-extShadowOffsetX").slider(
+          "value",
+          +styles.textShadowOffsetX.slice(0, -2)
         );
         cssbuttongenerator.setStyles();
       }
       if ($(this).attr("id") == "refresh-textShadowBlurRadius") {
-        cssbuttongenerator.styles.textShadowBlurRadius = "0px";
-        $("#option-textShadowBlurRadius").slider("value", 0);
-        $("#textShadowBlurRadius").val(
-          cssbuttongenerator.styles.textShadowBlurRadius
+        styles.textShadowBlurRadius = textshadowBlur;
+        $("#textShadowBlurRadius").val(styles.textShadowBlurRadius);
+        $("#option-textShadowBlurRadius").slider(
+          "value",
+          +styles.textShadowBlurRadius.slice(0, -2)
         );
         cssbuttongenerator.setStyles();
       }
@@ -1475,7 +1521,7 @@
         .attr("class")
         .split(" ")[1]
         .split("-")[2];
-
+      numberStyleBtn = numberOfClass;
       // background greadiant
       if ($(this).css("background-image") != "none") {
         $("#solid").attr("checked", false);
@@ -1574,24 +1620,24 @@
           .css("text-shadow")
           .match(/(-?\d+px)|(rgb\(.+\))/g);
 
-        var boxshadowX = textshadow[1];
-        var boxshadowY = textshadow[2];
-        var boxshadowBlur = textshadow[3];
+        var textshadowX = textshadow[1];
+        var textshadowY = textshadow[2];
+        var textshadowBlur = textshadow[3];
         $(".text-shadow").show();
         $("#textShadow-check").attr("checked", true);
-        styles.textShadowOffsetX = boxshadowX || "0px";
+        styles.textShadowOffsetX = textshadowX || "0px";
         $("#extShadowOffsetX").val(styles.textShadowOffsetX);
         $("#option-extShadowOffsetX").slider(
           "value",
           +styles.textShadowOffsetX.slice(0, -2)
         );
-        styles.textShadowOffsetY = boxshadowY || "0px";
+        styles.textShadowOffsetY = textshadowY || "0px";
         $("#textShadowOffsetY").val(styles.textShadowOffsetY);
         $("#option-textShadowOffsetY").slider(
           "value",
           +styles.textShadowOffsetY.slice(0, -2)
         );
-        styles.textShadowBlurRadius = boxshadowBlur || "0px";
+        styles.textShadowBlurRadius = textshadowBlur || "0px";
         $("#textShadowBlurRadius").val(styles.textShadowBlurRadius);
         $("#option-textShadowBlurRadius").slider(
           "value",
@@ -1617,5 +1663,12 @@
       $(".preview-swatch-color").css("background", color);
       $(".preview-area").css("background", color);
     });
+
+    // defualt pallete
+    $(".box-shadow, .title-checkbox").hide();
+    $("#boxShadow-check").attr("checked", false);
+    $("#boxShadowInset").attr("checked", false);
+    $("#setting-widthX").slider("value", 140);
+    $("#widthX").val('140px');
   });
 })();
