@@ -1382,20 +1382,24 @@
       var styles = cssbuttongenerator.styles;
       var self = '.btn-style-'+numberStyleBtn;
       // box-shadow values
-      var boxshadow = $(self)
-        .css("boxShadow")
-        .match(/(-?\d+px)|(rgb\(.+\))|inset/g);
-      var boxshadowX = boxshadow[1];
-      var boxshadowY = boxshadow[2];
-      var boxshadowBlur = boxshadow[3];
-      var boxshadowSpread = boxshadow[4];
+      if ($(self).css("box-shadow") != "none") {
+        var boxshadow = $(self)
+          .css("boxShadow")
+          .match(/(-?\d+px)|(rgb\(.+\))|inset/g);
+        var boxshadowX = boxshadow[1];
+        var boxshadowY = boxshadow[2];
+        var boxshadowBlur = boxshadow[3];
+        var boxshadowSpread = boxshadow[4];
+      }
       // text-shadow
-      var textshadow = $(self)
-        .css("text-shadow")
-        .match(/(-?\d+px)|(rgb\(.+\))/g);
-      var textshadowX = textshadow[1];
-      var textshadowY = textshadow[2];
-      var textshadowBlur = textshadow[3];
+      if ($(self).css("text-shadow") != "none") {
+        var textshadow = $(self)
+          .css("text-shadow")
+          .match(/(-?\d+px)|(rgb\(.+\))/g);
+        var textshadowX = textshadow[1];
+        var textshadowY = textshadow[2];
+        var textshadowBlur = textshadow[3];
+      }
 
       if ($(this).attr("id") == "refresh-borderRadius") {
         $(".bordercorner").attr("checked", "checked");
@@ -1429,12 +1433,9 @@
       }
 
       if ($(this).attr("id") == "refresh-heightY") {
-        styles.boxShadowOffsetY = boxshadowY;
-        $("#boxShadowOffsetY").val(styles.boxShadowOffsetY);
-        $("#option-boxShadowOffsetY").slider(
-          "value",
-          +styles.boxShadowOffsetY.slice(0, -2)
-        );
+        styles.heightY = "50px";
+        $("#setting-heightY").slider("value", +styles.heightY.slice(0, -2));
+        $("#heightY").val(styles.heightY);
         cssbuttongenerator.setStyles();
       }
 
@@ -1496,7 +1497,7 @@
       }
       if ($(this).attr("id") == "refresh-textShadowOffsetX") {
         styles.textShadowOffsetX = textshadowX;
-        $("#extShadowOffsetX").val(styles.textShadowOffsetX);
+        $("#textShadowOffsetX").val(styles.textShadowOffsetX);
         $("#option-extShadowOffsetX").slider(
           "value",
           +styles.textShadowOffsetX.slice(0, -2)
@@ -1626,7 +1627,7 @@
         $(".text-shadow").show();
         $("#textShadow-check").attr("checked", true);
         styles.textShadowOffsetX = textshadowX || "0px";
-        $("#extShadowOffsetX").val(styles.textShadowOffsetX);
+        $("#textShadowOffsetX").val(styles.textShadowOffsetX);
         $("#option-extShadowOffsetX").slider(
           "value",
           +styles.textShadowOffsetX.slice(0, -2)
