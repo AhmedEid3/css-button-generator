@@ -302,12 +302,19 @@ body {
   cursor: not-allowed !important;
 }
 
-.trigger-btns-template {
-  margin: 7px 0;
+.wrap-trigger-btn {
+  background-color: #ffffff;
+  position: sticky;
+  top: -10px;
+  z-index: 98;
+  .trigger-btns-template {
+    margin: 7px 0;
+  }
   @media (min-width: 992px) {
     display: none;
   }
 }
+
 .sidenav-overlay {
   position: absolute;
   top: 0;
